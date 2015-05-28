@@ -1,19 +1,32 @@
-(* Content-type: application/vnd.wolfram.mathematica *)
+(* Content-type: application/vnd.wolfram.cdf.text *)
 
-(*** Wolfram Notebook File ***)
-(* http://www.wolfram.com/nb *)
+(*** Wolfram CDF File ***)
+(* http://www.wolfram.com/cdf *)
 
 (* CreatedBy='Mathematica 10.1' *)
+
+(*************************************************************************)
+(*                                                                       *)
+(*  The Mathematica License under which this file was created prohibits  *)
+(*  restricting third parties in receipt of this file from republishing  *)
+(*  or redistributing it by any means, including but not limited to      *)
+(*  rights management or terms of use, without the express consent of    *)
+(*  Wolfram Research, Inc. For additional information concerning CDF     *)
+(*  licensing and redistribution see:                                    *)
+(*                                                                       *)
+(*        www.wolfram.com/cdf/adopting-cdf/licensing-options.html        *)
+(*                                                                       *)
+(*************************************************************************)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
-NotebookDataPosition[       158,          7]
-NotebookDataLength[     10062,        306]
-NotebookOptionsPosition[      9208,        277]
-NotebookOutlinePosition[      9552,        292]
-CellTagsIndexPosition[      9509,        289]
+NotebookDataPosition[      1064,         20]
+NotebookDataLength[     10064,        306]
+NotebookOptionsPosition[     10114,        290]
+NotebookOutlinePosition[     10458,        305]
+CellTagsIndexPosition[     10415,        302]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -291,25 +304,27 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 1467, 39, 132, "Input"],
-Cell[2028, 61, 420, 7, 31, "Input"],
-Cell[2451, 70, 571, 14, 72, "Input"],
-Cell[3025, 86, 414, 10, 72, "Input"],
-Cell[3442, 98, 325, 8, 52, "Input"],
-Cell[3770, 108, 371, 9, 52, "Input"],
-Cell[4144, 119, 272, 6, 52, "Input"],
-Cell[4419, 127, 320, 8, 52, "Input"],
-Cell[4742, 137, 318, 8, 52, "Input"],
-Cell[5063, 147, 334, 8, 72, "Input"],
-Cell[5400, 157, 382, 9, 72, "Input"],
-Cell[5785, 168, 673, 20, 52, "Input"],
-Cell[6461, 190, 360, 10, 52, "Input"],
-Cell[6824, 202, 534, 14, 52, "Input"],
-Cell[7361, 218, 475, 13, 52, "Input"],
-Cell[7839, 233, 727, 23, 72, "Input"],
-Cell[8569, 258, 635, 17, 92, "Input"]
+Cell[1464, 33, 1467, 39, 132, "Input"],
+Cell[2934, 74, 420, 7, 31, "Input"],
+Cell[3357, 83, 571, 14, 72, "Input"],
+Cell[3931, 99, 414, 10, 72, "Input"],
+Cell[4348, 111, 325, 8, 52, "Input"],
+Cell[4676, 121, 371, 9, 52, "Input"],
+Cell[5050, 132, 272, 6, 52, "Input"],
+Cell[5325, 140, 320, 8, 52, "Input"],
+Cell[5648, 150, 318, 8, 52, "Input"],
+Cell[5969, 160, 334, 8, 72, "Input"],
+Cell[6306, 170, 382, 9, 72, "Input"],
+Cell[6691, 181, 673, 20, 52, "Input"],
+Cell[7367, 203, 360, 10, 52, "Input"],
+Cell[7730, 215, 534, 14, 52, "Input"],
+Cell[8267, 231, 475, 13, 52, "Input"],
+Cell[8745, 246, 727, 23, 72, "Input"],
+Cell[9475, 271, 635, 17, 92, "Input"]
 }
 ]
 *)
 
 (* End of internal cache information *)
+
+(* NotebookSignature evpudDvf5iWD@A1MI2tnh2sK *)
