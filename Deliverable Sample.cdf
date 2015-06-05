@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1064,         20]
-NotebookDataLength[    464712,       7708]
-NotebookOptionsPosition[    465181,       7702]
-NotebookOutlinePosition[    465523,       7717]
-CellTagsIndexPosition[    465480,       7714]
+NotebookDataLength[    469240,       7819]
+NotebookOptionsPosition[    469666,       7812]
+NotebookOutlinePosition[    470009,       7827]
+CellTagsIndexPosition[    469966,       7824]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -107,8 +107,72 @@ Cell[BoxData[{
      RowBox[{
       RowBox[{"{", "\"\<Nuclear has it's side effect.\>\"", "}"}], ",", 
       RowBox[{"{", "FukushimaPic", "}"}]}], "}"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]"}], "Input",
- CellChangeTimes->{{3.642523570506686*^9, 3.642523763951065*^9}}],
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tab05Interactions", " ", "=", " ", 
+   RowBox[{"DynamicModule", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"x", "=", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", 
+     RowBox[{"EventHandler", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Annotation", "[", 
+          RowBox[{
+           RowBox[{"Graphics", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"Red", ",", 
+               RowBox[{"Disk", "[", "]"}]}], "}"}], ",", 
+             RowBox[{"PlotLabel", "\[Rule]", 
+              RowBox[{"Dynamic", "[", 
+               RowBox[{"x", "[", 
+                RowBox[{"[", "1", "]"}], "]"}], "]"}]}]}], "]"}], ",", "1", 
+           ",", "\"\<Mouse\>\""}], "]"}], ",", 
+         RowBox[{"Annotation", "[", 
+          RowBox[{
+           RowBox[{"Graphics", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"Green", ",", 
+               RowBox[{"Disk", "[", "]"}]}], "}"}], ",", 
+             RowBox[{"PlotLabel", "\[Rule]", 
+              RowBox[{"Dynamic", "[", 
+               RowBox[{"x", "[", 
+                RowBox[{"[", "2", "]"}], "]"}], "]"}]}]}], "]"}], ",", "2", 
+           ",", "\"\<Mouse\>\""}], "]"}], ",", 
+         RowBox[{"Annotation", "[", 
+          RowBox[{
+           RowBox[{"Graphics", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"Blue", ",", 
+               RowBox[{"Disk", "[", "]"}]}], "}"}], ",", 
+             RowBox[{"PlotLabel", "\[Rule]", 
+              RowBox[{"Dynamic", "[", 
+               RowBox[{"x", "[", 
+                RowBox[{"[", "3", "]"}], "]"}], "]"}]}]}], "]"}], ",", "3", 
+           ",", "\"\<Mouse\>\""}], "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"\"\<MouseClicked\>\"", "\[RuleDelayed]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"x", "[", 
+            RowBox[{"[", 
+             RowBox[{"MouseAnnotation", "[", "]"}], "]"}], "]"}], "=", 
+           RowBox[{
+            RowBox[{"x", "[", 
+             RowBox[{"[", 
+              RowBox[{"MouseAnnotation", "[", "]"}], "]"}], "]"}], "+", 
+            "1"}]}], ")"}]}], "}"}]}], "]"}]}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.642523570506686*^9, 3.642523763951065*^9}, 
+   3.6425257615822573`*^9, {3.6425258206422653`*^9, 3.642525846981999*^9}, {
+   3.642526051376786*^9, 3.6425260727679977`*^9}, {3.642526230277891*^9, 
+   3.6425262569788904`*^9}, {3.642526328132347*^9, 3.642526331033409*^9}, {
+   3.642526369297626*^9, 3.6425263758973217`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -123,7 +187,9 @@ Cell[BoxData[{
      "\[IndentingNewLine]", 
      RowBox[{"\"\<Cern\>\"", "\[Rule]", "tab03Cern"}], ",", 
      "\[IndentingNewLine]", 
-     RowBox[{"\"\<Fukushima\>\"", "\[Rule]", " ", "tab04Fukushima"}]}], 
+     RowBox[{"\"\<Fukushima\>\"", "\[Rule]", " ", "tab04Fukushima"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<Interactions\>\"", "\[Rule]", " ", "tab05Interactions"}]}], 
     "\[IndentingNewLine]", "}"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Pane", "[", 
   RowBox[{"TabView", "[", "LingboTestTabs", "]"}], "]"}]}], "Input",
@@ -131,7 +197,8 @@ Cell[BoxData[{
   3.642523910002965*^9, 3.642523911346922*^9}, {3.642524166161991*^9, 
   3.64252418174806*^9}, {3.6425242280720105`*^9, 3.642524231345338*^9}, {
   3.6425243646138334`*^9, 3.6425244152968855`*^9}, {3.642524449682344*^9, 
-  3.642524455488473*^9}, {3.642524594786009*^9, 3.642524597836182*^9}}],
+  3.642524455488473*^9}, {3.642524594786009*^9, 3.642524597836182*^9}, {
+  3.6425257700222597`*^9, 3.642525790153578*^9}}],
 
 Cell[BoxData[
  PaneBox[
@@ -7693,15 +7760,58 @@ MEaB9cHQBCj3dyArSQoSWhBhFaU4+J6DDNovOtUELQNS1fAVZf4XECJVSg==
      },
      AutoDelete->False,
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-    "Grid"]}}, 4]]], "Output",
+    "Grid"]}, {5,"\<\"Interactions\"\>"->
+   DynamicModuleBox[{$CellContext`x$$ = {0, 0, 0}}, 
+    TagBox[
+     RowBox[{"{", 
+      RowBox[{
+       TagBox[
+        GraphicsBox[
+         {RGBColor[1, 0, 0], DiskBox[{0, 0}]},
+         PlotLabel->FormBox[
+           DynamicBox[
+            ToBoxes[
+             Part[$CellContext`x$$, 1], TraditionalForm]], TraditionalForm]],
+        Annotation[#, 1, "Mouse"]& ], ",", 
+       TagBox[
+        GraphicsBox[
+         {RGBColor[0, 1, 0], DiskBox[{0, 0}]},
+         PlotLabel->FormBox[
+           DynamicBox[
+            ToBoxes[
+             Part[$CellContext`x$$, 2], TraditionalForm]], TraditionalForm]],
+        Annotation[#, 2, "Mouse"]& ], ",", 
+       TagBox[
+        GraphicsBox[
+         {RGBColor[0, 0, 1], DiskBox[{0, 0}]},
+         PlotLabel->FormBox[
+           DynamicBox[
+            ToBoxes[
+             Part[$CellContext`x$$, 3], TraditionalForm]], TraditionalForm]],
+        Annotation[#, 3, "Mouse"]& ]}], "}"}],
+     EventHandlerTag[{"MouseClicked" :> (Part[$CellContext`x$$, 
+          MouseAnnotation[]] = Part[$CellContext`x$$, 
+           MouseAnnotation[]] + 1), PassEventsDown -> Automatic, PassEventsUp -> 
+       True}]],
+    DynamicModuleValues:>{}]}}, 1]]], "Output",
  CellChangeTimes->{
   3.642523923392476*^9, 3.6425242329684925`*^9, {3.642524295340562*^9, 
    3.642524309425581*^9}, {3.642524443572996*^9, 3.642524482733306*^9}, {
-   3.642524570756916*^9, 3.642524606406279*^9}}]
-}, Open  ]]
+   3.642524570756916*^9, 3.642524606406279*^9}, {3.642525804576839*^9, 
+   3.64252580756102*^9}, {3.642525857781681*^9, 3.6425258585862527`*^9}, {
+   3.642525931656629*^9, 3.6425259327424326`*^9}, {3.6425260049577637`*^9, 
+   3.642526018341337*^9}, 3.6425261181151114`*^9, {3.6425261654297657`*^9, 
+   3.642526166097249*^9}, {3.642526207715843*^9, 3.642526208794612*^9}, {
+   3.6425262619193974`*^9, 3.6425262627730064`*^9}, {3.642526337449974*^9, 
+   3.642526338730887*^9}, {3.6425263795319057`*^9, 3.642526383504733*^9}, 
+   3.642526430815384*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.642526386050542*^9, 3.6425264501771555`*^9}}]
 },
 WindowSize->{759, 733},
-WindowMargins->{{3, Automatic}, {Automatic, 14}},
+WindowMargins->{{51, Automatic}, {Automatic, 18}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -7718,15 +7828,16 @@ CellTagsIndex->{}
 Notebook[{
 Cell[1464, 33, 214, 4, 31, "Input"],
 Cell[1681, 39, 1275, 33, 132, "Input"],
-Cell[2959, 74, 1261, 36, 172, "Input"],
+Cell[2959, 74, 3773, 100, 312, "Input"],
 Cell[CellGroupData[{
-Cell[4245, 114, 985, 19, 152, "Input"],
-Cell[5233, 135, 459932, 7564, 181, "Output"]
-}, Open  ]]
+Cell[6757, 178, 1147, 22, 172, "Input"],
+Cell[7907, 202, 461646, 7604, 254, "Output"]
+}, Open  ]],
+Cell[469568, 7809, 94, 1, 31, "Input"]
 }
 ]
 *)
 
 (* End of internal cache information *)
 
-(* NotebookSignature 3xTSV3TT@6onnA1WsLPtqOd4 *)
+(* NotebookSignature @x02U05#UINfUAwr3Z5PNlQn *)

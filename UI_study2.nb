@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     84956,       1713]
-NotebookOptionsPosition[     83886,       1673]
-NotebookOutlinePosition[     84231,       1688]
-CellTagsIndexPosition[     84188,       1685]
+NotebookDataLength[     90684,       1836]
+NotebookOptionsPosition[     89612,       1796]
+NotebookOutlinePosition[     89955,       1811]
+CellTagsIndexPosition[     89912,       1808]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -54,21 +54,21 @@ Cell[BoxData[
 
 Cell[BoxData[
  PanelBox[
-  DynamicModuleBox[{$CellContext`f$$ = Tan[$CellContext`x]}, 
+  DynamicModuleBox[{$CellContext`f$$ = Sin[$CellContext`x]}, 
    TagBox[GridBox[{
       {
        InputFieldBox[Dynamic[$CellContext`f$$]]},
       {
        DynamicBox[ToBoxes[
          Plot[$CellContext`f$$, {$CellContext`x, -5, 5}], StandardForm],
-        ImageSizeCache->{180., {54., 58.}}]}
+        ImageSizeCache->{180., {55., 58.}}]}
      },
      DefaultBaseStyle->"Column",
      GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"],
    DynamicModuleValues:>{}]]], "Output",
- CellChangeTimes->{3.6425158484105043`*^9}]
+ CellChangeTimes->{3.6425158484105043`*^9, 3.6425291733930616`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -429,7 +429,7 @@ Cell[BoxData[
    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Grid"]], "Output",
- CellChangeTimes->{3.6425158422931356`*^9}],
+ CellChangeTimes->{3.6425158422931356`*^9, 3.6425291734400935`*^9}],
 
 Cell[BoxData[
  DynamicModuleBox[{$CellContext`red$$ = 0, $CellContext`green$$ = 
@@ -472,7 +472,7 @@ Cell[BoxData[
     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
    "Column"],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.642515842294137*^9}]
+ CellChangeTimes->{3.6425158422931356`*^9, 3.6425291734481006`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -499,17 +499,17 @@ Cell[BoxData[
   RowBox[{
    TagBox[
     StyleBox[
-     DynamicModuleBox[{$CellContext`x$$ = 0., Typeset`show$$ = True, 
+     DynamicModuleBox[{$CellContext`x$$ = 0, Typeset`show$$ = True, 
       Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
       Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
       "\"untitled\"", Typeset`specs$$ = {{
-        Hold[$CellContext`x$$], 0, 1}}, Typeset`size$$ = {16., {0., 8.}}, 
+        Hold[$CellContext`x$$], 0, 1}}, Typeset`size$$ = {8., {0., 8.}}, 
       Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-      True, $CellContext`x$8355$$ = 0}, 
+      True, $CellContext`x$695$$ = 0}, 
       DynamicBox[Manipulate`ManipulateBoxes[
        1, StandardForm, "Variables" :> {$CellContext`x$$ = 0}, 
         "ControllerVariables" :> {
-          Hold[$CellContext`x$$, $CellContext`x$8355$$, 0]}, 
+          Hold[$CellContext`x$$, $CellContext`x$695$$, 0]}, 
         "OtherVariables" :> {
          Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
           Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -532,17 +532,17 @@ Cell[BoxData[
    StyleBox[
     TagBox[
      StyleBox[
-      DynamicModuleBox[{$CellContext`x$$ = 0., Typeset`show$$ = True, 
+      DynamicModuleBox[{$CellContext`x$$ = 0, Typeset`show$$ = True, 
        Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
        Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
        "\"untitled\"", Typeset`specs$$ = {{
-         Hold[$CellContext`x$$], 0, 1}}, Typeset`size$$ = {16., {0., 8.}}, 
+         Hold[$CellContext`x$$], 0, 1}}, Typeset`size$$ = {8., {0., 8.}}, 
        Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-       True, $CellContext`x$8372$$ = 0}, 
+       True, $CellContext`x$715$$ = 0}, 
        DynamicBox[Manipulate`ManipulateBoxes[
         1, StandardForm, "Variables" :> {$CellContext`x$$ = 0}, 
          "ControllerVariables" :> {
-           Hold[$CellContext`x$$, $CellContext`x$8372$$, 0]}, 
+           Hold[$CellContext`x$$, $CellContext`x$715$$, 0]}, 
          "OtherVariables" :> {
           Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
            Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -564,7 +564,7 @@ Cell[BoxData[
      Manipulate`InterpretManipulate[1]],
     ControlsRendering->"Generic",
     StripOnInput->False]}], "}"}]], "Output",
- CellChangeTimes->{3.6425161459472027`*^9}]
+ CellChangeTimes->{3.6425161459472027`*^9, 3.642529173779334*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -601,14 +601,13 @@ Cell[BoxData[
  CellChangeTimes->{{3.6425161992573247`*^9, 3.642516199282352*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`t$$ = 0.4186267852783203}, 
+ DynamicModuleBox[{$CellContext`t$$}, 
   RowBox[{"{", 
    RowBox[{
     AnimatorBox[Dynamic[$CellContext`t$$],
      AnimationDirection->ForwardBackward,
-     AnimationRunTime->12.41862678527832,
      AnimationRunning->False,
-     AnimationTimeIndex->2.4186267852783203`], ",", 
+     AnimationTimeIndex->0.], ",", 
     DynamicBox[ToBoxes[
       Plot[{
         Cos[$CellContext`x], 
@@ -618,7 +617,7 @@ Cell[BoxData[
       StandardForm],
      ImageSizeCache->{180., {53., 58.}}]}], "}"}],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.6425162144031076`*^9}]
+ CellChangeTimes->{3.6425162144031076`*^9, 3.6425291738633966`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -693,8 +692,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.6425162659815454`*^9, 3.642516266007563*^9}}],
 
 Cell[BoxData[
- DynamicModuleBox[{$CellContext`p$$ = {5.874778262212914, 
-  1.6964600329384885`}}, 
+ DynamicModuleBox[{$CellContext`p$$ = {2 Pi, 0}}, 
   RowBox[{"{", 
    RowBox[{
     Slider2DBox[Dynamic[
@@ -1627,8 +1625,6 @@ eyCz/x/0Pwsk
      Axes->True,
      DisplayFunction->Identity,
      FaceGridsStyle->Automatic,
-     ImageSize->{180., 180.},
-     ImageSizeRaw->Automatic,
      Method->{},
      PlotRange->{All, All, All},
      PlotRangePadding->{Automatic, Automatic, Automatic},
@@ -1640,11 +1636,9 @@ eyCz/x/0Pwsk
            Part[$CellContext`p$$, 1]] Sin[
            Part[$CellContext`p$$, 2]], 
          Cos[
-          Part[$CellContext`p$$, 2]]}],
-     ViewVertical->{-0.4984390592504419, 0.8093264458672296, 
-      0.31072368469991224`}]}], "}"}],
+          Part[$CellContext`p$$, 2]]}]]}], "}"}],
   DynamicModuleValues:>{}]], "Output",
- CellChangeTimes->{3.642516284795928*^9}]
+ CellChangeTimes->{3.642516284795928*^9, 3.6425291740235095`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1664,15 +1658,144 @@ Cell[BoxData[
   ButtonFunction:>{},
   Evaluator->None,
   Method->"Preemptive"]], "Output",
- CellChangeTimes->{3.6425227602361135`*^9}]
+ CellChangeTimes->{3.6425227602361135`*^9, 3.6425291740305133`*^9}]
 }, Open  ]],
 
-Cell[BoxData["\[IndentingNewLine]"], "Input",
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"CreateDialog", "[", 
+    RowBox[{
+     RowBox[{"DynamicModule", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"s", "=", "\"\<\>\""}], ",", "dlg", ",", 
+         RowBox[{"s2", "=", "\"\<\>\""}], ",", "ret", ",", 
+         RowBox[{"case", "=", "False"}]}], "}"}], ",", 
+       RowBox[{"Column", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"\"\<Find this:\>\"", ",", 
+           RowBox[{"InputField", "[", 
+            RowBox[{
+             RowBox[{"Dynamic", "[", "s", "]"}], ",", "String"}], "]"}], ",", 
+           RowBox[{"Dynamic", "[", "s2", "]"}], ",", 
+           RowBox[{"Row", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Button", "[", 
+               RowBox[{"\"\<Find Next\>\"", ",", 
+                RowBox[{
+                 RowBox[{"dlg", "=", 
+                  RowBox[{"SelectedNotebook", "[", "]"}]}], ";", 
+                 RowBox[{"s2", "=", "\"\<\>\""}], ";", "\[IndentingNewLine]", 
+                 RowBox[{"ret", "=", 
+                  RowBox[{"NotebookFind", "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"DeleteCases", "[", 
+                    RowBox[{
+                    RowBox[{"Select", "[", 
+                    RowBox[{
+                    RowBox[{"Notebooks", "[", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Options", "[", 
+                    RowBox[{"#", ",", "StyleDefinitions"}], "]"}], "=!=", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "StyleDefinitions", "\[Rule]", "\"\<Palette.nb\>\""}], 
+                    "}"}]}], ")"}], "&"}]}], "]"}], ",", "dlg"}], "]"}], "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], ",", "s", ",", "Next", 
+                    ",", "CellContents", ",", 
+                    RowBox[{"IgnoreCase", "\[Rule]", "case"}]}], "]"}]}], ";",
+                  "\[IndentingNewLine]", 
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{"ret", "===", "$Failed"}], ",", 
+                   RowBox[{"s2", "=", "\"\<No matches found.\>\""}]}], 
+                  "]"}]}]}], "]"}], ",", 
+              RowBox[{"Button", "[", 
+               RowBox[{"\"\<Find Previous\>\"", ",", 
+                RowBox[{
+                 RowBox[{"dlg", "=", 
+                  RowBox[{"SelectedNotebook", "[", "]"}]}], ";", 
+                 RowBox[{"s2", "=", "\"\<\>\""}], ";", "\[IndentingNewLine]", 
+                 RowBox[{"ret", "=", 
+                  RowBox[{"NotebookFind", "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"DeleteCases", "[", 
+                    RowBox[{
+                    RowBox[{"Select", "[", 
+                    RowBox[{
+                    RowBox[{"Notebooks", "[", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Options", "[", 
+                    RowBox[{"#", ",", "StyleDefinitions"}], "]"}], "=!=", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "StyleDefinitions", "\[Rule]", "\"\<Palette.nb\>\""}], 
+                    "}"}]}], ")"}], "&"}]}], "]"}], ",", "dlg"}], "]"}], "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], ",", "s", ",", "Previous",
+                     ",", "CellContents", ",", 
+                    RowBox[{"IgnoreCase", "\[Rule]", "case"}]}], "]"}]}], ";",
+                  "\[IndentingNewLine]", 
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{"ret", "===", "$Failed"}], ",", 
+                   RowBox[{"s2", "=", "\"\<No matches found.\>\""}]}], 
+                  "]"}]}]}], "]"}], ",", 
+              RowBox[{"Button", "[", 
+               RowBox[{"\"\<Find All\>\"", ",", 
+                RowBox[{
+                 RowBox[{"dlg", "=", 
+                  RowBox[{"SelectedNotebook", "[", "]"}]}], ";", 
+                 RowBox[{"s2", "=", "\"\<\>\""}], ";", "\[IndentingNewLine]", 
+                 RowBox[{"ret", "=", 
+                  RowBox[{"NotebookFind", "[", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"DeleteCases", "[", 
+                    RowBox[{
+                    RowBox[{"Select", "[", 
+                    RowBox[{
+                    RowBox[{"Notebooks", "[", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Options", "[", 
+                    RowBox[{"#", ",", "StyleDefinitions"}], "]"}], "=!=", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    "StyleDefinitions", "\[Rule]", "\"\<Palette.nb\>\""}], 
+                    "}"}]}], ")"}], "&"}]}], "]"}], ",", "dlg"}], "]"}], "[", 
+                    RowBox[{"[", "1", "]"}], "]"}], ",", "s", ",", "All", ",",
+                     "CellContents", ",", 
+                    RowBox[{"IgnoreCase", "\[Rule]", "case"}]}], "]"}]}], ";",
+                  "\[IndentingNewLine]", 
+                 RowBox[{"If", "[", 
+                  RowBox[{
+                   RowBox[{"ret", "===", "$Failed"}], ",", 
+                   RowBox[{"s2", "=", "\"\<No matches found.\>\""}]}], 
+                  "]"}]}]}], "]"}]}], "}"}], "]"}], ",", 
+           RowBox[{"Row", "[", 
+            RowBox[{"{", 
+             RowBox[{"\"\<Ignore Case  \>\"", ",", 
+              RowBox[{"Checkbox", "[", 
+               RowBox[{"Dynamic", "[", "case", "]"}], "]"}]}], "}"}], "]"}]}],
+           "}"}], ",", "Automatic", ",", ".8"}], "]"}]}], "]"}], ",", 
+     RowBox[{"WindowTitle", "\[Rule]", "\"\<Find...\>\""}]}], "]"}], ";"}], 
+  "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.64252276929658*^9, 3.6425228049539323`*^9}, {
-  3.6425228377342463`*^9, 3.6425228677763233`*^9}}]
+   3.6425228377342463`*^9, 3.6425228677763233`*^9}, 3.642529162739012*^9}]
 },
-WindowSize->{759, 755},
-WindowMargins->{{Automatic, -33}, {-23, Automatic}},
+WindowSize->{759, 766},
+WindowMargins->{{-47, Automatic}, {Automatic, 9}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1691,30 +1814,30 @@ Cell[558, 20, 361, 8, 52, "Input",
  CellGroupingRules->{GroupTogetherGrouping, 10000.}],
 Cell[CellGroupData[{
 Cell[944, 32, 734, 20, 52, "Input"],
-Cell[1681, 54, 584, 16, 177, "Output"]
+Cell[1681, 54, 608, 16, 177, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2302, 75, 3929, 107, 292, "Input"],
-Cell[6234, 184, 10441, 247, 77, "Output"],
-Cell[16678, 433, 1346, 41, 303, "Output"]
+Cell[2326, 75, 3929, 107, 292, "Input"],
+Cell[6258, 184, 10465, 247, 77, "Output"],
+Cell[16726, 433, 1372, 41, 303, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18061, 479, 523, 15, 52, "Input"],
-Cell[18587, 496, 3294, 70, 126, "Output"]
+Cell[18135, 479, 523, 15, 52, "Input"],
+Cell[18661, 496, 3308, 70, 126, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21918, 571, 1074, 29, 112, "Input"],
-Cell[22995, 602, 708, 18, 128, "Output"]
+Cell[22006, 571, 1074, 29, 112, "Input"],
+Cell[23083, 602, 652, 17, 128, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[23740, 625, 2412, 67, 152, "Input"],
-Cell[26155, 694, 57015, 952, 197, "Output"]
+Cell[23772, 624, 2412, 67, 152, "Input"],
+Cell[26187, 693, 56854, 947, 197, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[83207, 1651, 289, 6, 31, "Input"],
-Cell[83499, 1659, 203, 7, 75, "Output"]
+Cell[83078, 1645, 289, 6, 31, "Input"],
+Cell[83370, 1653, 227, 7, 75, "Output"]
 }, Open  ]],
-Cell[83717, 1669, 165, 2, 52, "Input"]
+Cell[83612, 1663, 5996, 131, 592, "Input"]
 }
 ]
 *)
