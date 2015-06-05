@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1473998,      27566]
-NotebookOptionsPosition[   1471951,      27493]
-NotebookOutlinePosition[   1472292,      27508]
-CellTagsIndexPosition[   1472249,      27505]
+NotebookDataLength[   1474043,      27565]
+NotebookOptionsPosition[   1471996,      27492]
+NotebookOutlinePosition[   1472337,      27507]
+CellTagsIndexPosition[   1472294,      27504]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21776,9 +21776,9 @@ TWzngM1vOQfib7llzzIPbP5qrudAfodu1cL5IP6Fi24gfsvyBYcXgMP7RxOI
       Scaled[0.02]}, {
       Scaled[0.02], 
       Scaled[0.05]}},
-   Ticks->{None, Automatic}]}}, 5]], "Output",
+   Ticks->{None, Automatic}]}}, 6]], "Output",
  CellChangeTimes->{{3.6425086108311667`*^9, 3.6425086447301598`*^9}, 
-   3.6425094396448245`*^9}]
+   3.6425094396448245`*^9, {3.6425246647090282`*^9, 3.6425246708533983`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -25485,7 +25485,7 @@ Cell[BoxData[
       RGBColor[0.87, 0.94, 1]}, {
       Hold[$CellContext`\[Theta]$$], 0, Pi}, {
       Hold[$CellContext`axes$$], {True, False}}}, Typeset`size$$ = {
-    301., {144., 148.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    360., {146., 149.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
     Typeset`skipInitDone$$ = True, $CellContext`\[Theta]$26671$$ = 
     0, $CellContext`axes$26672$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
@@ -25508,7 +25508,7 @@ Cell[BoxData[
          RGBColor[0.87, 0.94, 1]}, {$CellContext`\[Theta]$$, 0, 
          Pi}, {$CellContext`axes$$, {True, False}}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{352., {215., 222.}},
+     ImageSizeCache->{411., {217., 224.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -25565,7 +25565,7 @@ Cell[BoxData[
       RGBColor[0, 1, 0]}, {
       Hold[$CellContext`\[Theta]$$], 0, Pi}, {
       Hold[$CellContext`axes$$], {True, False}}}, Typeset`size$$ = {
-    403., {168., 171.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    360., {135., 140.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
     Typeset`skipInitDone$$ = True, $CellContext`\[Theta]$27186$$ = 
     0, $CellContext`axes$27187$$ = False}, 
     DynamicBox[Manipulate`ManipulateBoxes[
@@ -25588,7 +25588,7 @@ Cell[BoxData[
          RGBColor[0, 1, 0]}, {$CellContext`\[Theta]$$, 0, 
          Pi}, {$CellContext`axes$$, {True, False}}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{454., {239., 246.}},
+     ImageSizeCache->{411., {207., 214.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -25659,16 +25659,15 @@ Cell[BoxData[
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
       RootLocusPlot[
-       CloudObject`Private`k ((100 
-          CloudObject`Private`s (CloudObject`Private`s + 10))/((
-          CloudObject`Private`s + 25) (CloudObject`Private`s - 10) (
-          CloudObject`Private`s^2 - 225))), {CloudObject`Private`k, 0, 30}, 
-        PlotRange -> All, AspectRatio -> 1, 
+       CloudObject`Private`k (((100 CloudObject`Private`s) (
+           CloudObject`Private`s + 10))/(((CloudObject`Private`s + 25) (
+           CloudObject`Private`s - 10)) (CloudObject`Private`s^2 - 225))), {
+        CloudObject`Private`k, 0, 30}, PlotRange -> All, AspectRatio -> 1, 
         PoleZeroMarkers -> {
          Automatic, "ParameterValues" -> CloudObject`Private`kVal$$}], 
       "Specifications" :> {{CloudObject`Private`kVal$$, 0, 30}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{411., {236., 243.}},
+     ImageSizeCache->{411., {223., 230.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -27529,45 +27528,45 @@ Cell[7853, 242, 507, 11, 98, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[8397, 258, 885, 24, 92, "Input"],
-Cell[9285, 284, 1197721, 21496, 359, "Output"]
+Cell[9285, 284, 1197771, 21496, 359, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1207043, 21785, 685, 19, 52, "Input"],
-Cell[1207731, 21806, 156695, 3633, 375, "Output"]
+Cell[1207093, 21785, 685, 19, 52, "Input"],
+Cell[1207781, 21806, 156695, 3633, 375, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1364463, 25444, 1114, 28, 72, "Input"],
-Cell[1365580, 25474, 2407, 47, 454, "Output"]
+Cell[1364513, 25444, 1114, 28, 72, "Input"],
+Cell[1365630, 25474, 2407, 47, 458, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1368024, 25526, 1006, 27, 72, "Input"],
-Cell[1369033, 25555, 2374, 47, 502, "Output"]
+Cell[1368074, 25526, 1006, 27, 72, "Input"],
+Cell[1369083, 25555, 2374, 47, 438, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1371444, 25607, 1107, 31, 72, "Input"],
-Cell[1372554, 25640, 2023, 41, 496, "Output"]
+Cell[1371494, 25607, 1107, 31, 72, "Input"],
+Cell[1372604, 25640, 2018, 40, 470, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1374614, 25686, 430, 12, 31, "Input"],
-Cell[1375047, 25700, 75964, 1302, 124, "Output"]
+Cell[1374659, 25685, 430, 12, 31, "Input"],
+Cell[1375092, 25699, 75964, 1302, 124, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1451048, 27007, 710, 20, 72, "Input"],
-Cell[1451761, 27029, 567, 13, 115, "Output"]
+Cell[1451093, 27006, 710, 20, 72, "Input"],
+Cell[1451806, 27028, 567, 13, 115, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1452365, 27047, 678, 20, 52, "Input"],
-Cell[1453046, 27069, 676, 17, 387, "Output"]
+Cell[1452410, 27046, 678, 20, 52, "Input"],
+Cell[1453091, 27068, 676, 17, 387, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1453759, 27091, 1166, 34, 72, "Input"],
-Cell[1454928, 27127, 10430, 173, 379, "Output"]
+Cell[1453804, 27090, 1166, 34, 72, "Input"],
+Cell[1454973, 27126, 10430, 173, 379, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1465395, 27305, 5259, 157, 292, "Input"],
-Cell[1470657, 27464, 1153, 22, 419, "Output"]
+Cell[1465440, 27304, 5259, 157, 292, "Input"],
+Cell[1470702, 27463, 1153, 22, 386, "Output"]
 }, Open  ]],
-Cell[1471825, 27489, 122, 2, 31, "Input"]
+Cell[1471870, 27488, 122, 2, 31, "Input"]
 }
 ]
 *)
