@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1781402,      33186]
-NotebookOptionsPosition[   1780920,      33166]
-NotebookOutlinePosition[   1781262,      33181]
-CellTagsIndexPosition[   1781219,      33178]
+NotebookDataLength[   1782216,      33209]
+NotebookOptionsPosition[   1781734,      33189]
+NotebookOutlinePosition[   1782076,      33204]
+CellTagsIndexPosition[   1782033,      33201]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -77,27 +77,32 @@ Cell[BoxData[{
     RowBox[{
      RowBox[{"{", 
       RowBox[{"\"\<UnderGraduate\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], 
-     ",", "Left"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+     ",", 
+     RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"subtab02", " ", "=", " ", 
    RowBox[{"Column", "[", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"\"\<Master\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], ",", " ",
-      "Center"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      RowBox[{"\"\<Master\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], ",", " ", 
+     RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"subtab03", " ", "=", " ", 
    RowBox[{"Column", "[", 
     RowBox[{
      RowBox[{"{", 
       RowBox[{"\"\<PhD\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], ",", 
-     "Right"}], "]"}]}], ";"}], "\[IndentingNewLine]"}], "Input",
+     RowBox[{"Alignment", "\[Rule]", "Right"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.6425267046644244`*^9, 3.64252675687156*^9}, {
   3.642526810151462*^9, 3.642526911415572*^9}, {3.6425275465597563`*^9, 
   3.642527592811657*^9}, {3.642527632882185*^9, 3.642527681276579*^9}, {
   3.6425286741917257`*^9, 3.6425286767595534`*^9}, {3.6425288187867017`*^9, 
   3.6425288666897726`*^9}, {3.642529662115491*^9, 3.642529675242836*^9}, {
-  3.642529740688267*^9, 3.6425298985313807`*^9}}],
+  3.642529740688267*^9, 3.6425298985313807`*^9}, {3.6427695819821544`*^9, 
+  3.642769593534335*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -108,7 +113,9 @@ Cell[BoxData[{
       RowBox[{
       "\"\<Modern and Concurrent Physics\\r\>\"", ",", 
        "\"\<has brought us\\r\>\"", ",", "\"\<to a historical point\\r\>\""}],
-       "}"}], ",", "Left"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+       "}"}], ",", 
+     RowBox[{"Alignment", "\[Rule]", " ", "Left"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"tab02Mars", " ", "=", " ", 
    RowBox[{"Grid", "[", 
@@ -295,7 +302,7 @@ Cell[BoxData[{
    3.642526369297626*^9, 3.6425263758973217`*^9}, {3.6425269751439056`*^9, 
    3.6425270541314206`*^9}, {3.6425294724857745`*^9, 3.642529509903395*^9}, {
    3.6425295672720327`*^9, 3.642529650600309*^9}, {3.6425299083643446`*^9, 
-   3.642530022751707*^9}}],
+   3.642530022751707*^9}, {3.6427695021424804`*^9, 3.6427695174893637`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -334,9 +341,18 @@ Cell[BoxData[
  PaneBox[
   TabViewBox[{{1,"\<\"Tiles\"\>"->
    TemplateBox[{
-    "Left","\"Modern and Concurrent Physics\\r\"","\"has brought us\\r\"",
+    "\"Modern and Concurrent Physics\\r\"","\"has brought us\\r\"",
      "\"to a historical point\\r\""},
-    "RowWithSeparator"]}, {2,"\<\"Mars\"\>"->
+    "Row",
+    DisplayFunction->(PaneBox[
+      RowBox[{
+        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
+    InterpretationFunction->(RowBox[{"Row", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           TemplateSlotSequence[1, ","], "}"}], ",", 
+         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
+   2,"\<\"Mars\"\>"->
    TagBox[GridBox[{
       {"\<\"Man-made machine first landed on the Mars in 2003\"\>"},
       {
@@ -16603,7 +16619,7 @@ CbeIz9ja8hSmVf0+I6P/hUUl3FwU2xMfBpCkWGdZ5X8BAeB6Aw==
        True}]],
     DynamicModuleValues:>{}]}, {6,"\<\"MenuView\"\>"->
    TagBox[
-    DynamicModuleBox[{Typeset`var$$ = 2}, 
+    DynamicModuleBox[{Typeset`var$$ = 1}, 
      InterpretationBox[
       TagBox[
        PanelBox[GridBox[{
@@ -21244,8 +21260,7 @@ B4Y=
                 DateListPlot[
                  CountryData[
                   Entity["Country", "Albania"], {{"GDP"}, {1970, 2005}}]], 
-                StandardForm],
-               ImageSizeCache->{180., {52., 56.}}], 3->
+                StandardForm]], 3->
               DynamicBox[ToBoxes[
                 DateListPlot[
                  CountryData[
@@ -26989,7 +27004,6 @@ B4Y=
                    CountryData[
                     Entity["Country", "Albania"], {{"GDP"}, {1970, 2005}}]]}],
                  StandardForm],
-               ImageSizeCache->{180., {88.5, 95.5}},
                SynchronousUpdating->False], 3->
               DynamicBox[ToBoxes[
                 Column[{
@@ -27003,7 +27017,6 @@ B4Y=
                    CountryData[
                     Entity["Country", "Algeria"], {{"GDP"}, {1970, 2005}}]]}],
                  StandardForm],
-               ImageSizeCache->{180., {87., 94.}},
                SynchronousUpdating->False], 4->
               DynamicBox[ToBoxes[
                 Column[{
@@ -30193,7 +30206,6 @@ B4Y=
                    CountryData[
                     Entity["Country", "Zambia"], {{"GDP"}, {1970, 2005}}]]}], 
                 StandardForm],
-               ImageSizeCache->{180., {88.5, 95.5}},
                SynchronousUpdating->False], 240->
               DynamicBox[ToBoxes[
                 Column[{
@@ -30208,7 +30220,6 @@ B4Y=
                     Entity[
                     "Country", "Zimbabwe"], {{"GDP"}, {1970, 2005}}]]}], 
                 StandardForm],
-               ImageSizeCache->{180., {88.5, 95.5}},
                SynchronousUpdating->False]}, Dynamic[Typeset`var$$],
               Alignment->Automatic,
               ImageSize->Automatic,
@@ -33137,8 +33148,18 @@ B4Y=
     Setting[#, {0}]& ]}, {8,"\<\"NestedTab\"\>"->
    PaneBox[
     TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
-     TemplateBox[{"Left","\"UnderGraduate\\r\"","\"Level\\r\""},
-      "RowWithSeparator"]}, {2,"\<\"Master\"\>"->
+     TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
+      "Row",
+      DisplayFunction->(PaneBox[
+        RowBox[{
+          TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> 
+        Left]& ),
+      InterpretationFunction->(RowBox[{"Row", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             TemplateSlotSequence[1, ","], "}"}], ",", 
+           RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
+     2,"\<\"Master\"\>"->
      TagBox[GridBox[{
         {"\<\"Master\\r\"\>"},
         {"\<\"Level\\r\"\>"}
@@ -33161,7 +33182,9 @@ B4Y=
   3.6425300737342753`*^9, 3.6425300805661354`*^9}, {3.642530241531628*^9, 
   3.642530257585814*^9}, {3.642530344687766*^9, 3.642530346822305*^9}, {
   3.6425304647553535`*^9, 3.642530465809102*^9}, {3.642530560192236*^9, 
-  3.6425305704185095`*^9}}]
+  3.6425305704185095`*^9}, {3.6427656267510386`*^9, 3.6427656704250755`*^9}, {
+  3.6427695269831104`*^9, 3.642769570508993*^9}, {3.6427696161163626`*^9, 
+  3.642769641116108*^9}}]
 }, Open  ]]
 },
 WindowSize->{759, 733},
@@ -33182,11 +33205,11 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 215, 4, 31, "Input"],
 Cell[776, 26, 1175, 32, 112, "Input"],
-Cell[1954, 60, 1570, 39, 132, "Input"],
-Cell[3527, 101, 7466, 196, 752, "Input"],
+Cell[1954, 60, 1738, 44, 132, "Input"],
+Cell[3695, 106, 7564, 198, 752, "Input"],
 Cell[CellGroupData[{
-Cell[11018, 301, 1568, 29, 232, "Input"],
-Cell[12589, 332, 1768315, 32831, 327, "Output"]
+Cell[11284, 308, 1568, 29, 232, "Input"],
+Cell[12855, 339, 1768863, 32847, 294, "Output"]
 }, Open  ]]
 }
 ]

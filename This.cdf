@@ -23,333 +23,14 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1064,         20]
-NotebookDataLength[   1782218,      33209]
-NotebookOptionsPosition[   1782640,      33202]
-NotebookOutlinePosition[   1782982,      33217]
-CellTagsIndexPosition[   1782939,      33214]
+NotebookDataLength[   1769388,      32883]
+NotebookOptionsPosition[   1769833,      32875]
+NotebookOutlinePosition[   1770388,      32898]
+CellTagsIndexPosition[   1770345,      32895]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
-Cell[BoxData[
- RowBox[{
-  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}]], "Input",
- CellChangeTimes->{{3.6425265318447256`*^9, 3.6425265553945055`*^9}, {
-  3.642527611227753*^9, 3.6425276219003468`*^9}}],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"mypath", " ", "=", " ", "\"\<E:\\\\Download\>\""}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"CernPic", " ", "=", " ", 
-   RowBox[{"Import", "[", 
-    RowBox[{
-     RowBox[{"FileNameJoin", "[", 
-      RowBox[{"{", 
-       RowBox[{"mypath", ",", "\"\<CernLHC.jpeg\>\""}], "}"}], "]"}], ",", 
-     RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"FukushimaPic", " ", "=", " ", 
-   RowBox[{"Import", "[", 
-    RowBox[{
-     RowBox[{"FileNameJoin", "[", 
-      RowBox[{"{", 
-       RowBox[{"mypath", ",", "\"\<Fukushima.jpg\>\""}], "}"}], "]"}], ",", 
-     RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"MarsPic", " ", "=", " ", 
-   RowBox[{"Import", "[", 
-    RowBox[{
-     RowBox[{"FileNameJoin", "[", 
-      RowBox[{"{", 
-       RowBox[{"mypath", ",", "\"\<Mars.jpg\>\""}], "}"}], "]"}], ",", 
-     RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}]}], 
-  ";"}]}], "Input",
- CellChangeTimes->{{3.642526557186772*^9, 3.642526700278324*^9}, {
-  3.6425270894415426`*^9, 3.642527111594309*^9}}],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"previouspage", " ", "=", " ", 
-   RowBox[{"Button", "[", 
-    RowBox[{"\"\<<=\>\"", ",", 
-     RowBox[{"Print", "[", "\"\<Yes\>\"", "]"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"nextpage", " ", "=", " ", 
-   RowBox[{"Button", "[", 
-    RowBox[{"\"\<=>\>\"", ",", " ", 
-     RowBox[{"Print", "[", "\"\<No\>\"", "]"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"subtab01", " ", "=", " ", 
-   RowBox[{"Row", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"\"\<UnderGraduate\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], 
-     ",", 
-     RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"subtab02", " ", "=", " ", 
-   RowBox[{"Column", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"\"\<Master\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], ",", " ", 
-     RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"subtab03", " ", "=", " ", 
-   RowBox[{"Column", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"\"\<PhD\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], ",", 
-     RowBox[{"Alignment", "\[Rule]", "Right"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]"}], "Input",
- CellChangeTimes->{{3.6425267046644244`*^9, 3.64252675687156*^9}, {
-  3.642526810151462*^9, 3.642526911415572*^9}, {3.6425275465597563`*^9, 
-  3.642527592811657*^9}, {3.642527632882185*^9, 3.642527681276579*^9}, {
-  3.6425286741917257`*^9, 3.6425286767595534`*^9}, {3.6425288187867017`*^9, 
-  3.6425288666897726`*^9}, {3.642529662115491*^9, 3.642529675242836*^9}, {
-  3.642529740688267*^9, 3.6425298985313807`*^9}, {3.6427695819821544`*^9, 
-  3.642769593534335*^9}}],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"tab01Titles", " ", "=", " ", 
-   RowBox[{"Row", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-      "\"\<Modern and Concurrent Physics\\r\>\"", ",", 
-       "\"\<has brought us\\r\>\"", ",", "\"\<to a historical point\\r\>\""}],
-       "}"}], ",", 
-     RowBox[{"Alignment", "\[Rule]", " ", "Left"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"tab02Mars", " ", "=", " ", 
-   RowBox[{"Grid", "[", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{
-      "{", "\"\<Man-made machine first landed on the Mars in 2003\>\"", "}"}],
-       ",", 
-      RowBox[{"{", "MarsPic", "}"}]}], "}"}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"tab03Cern", " ", "=", " ", 
-   RowBox[{"Grid", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"Grid", "[", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"{", "\"\<Man-made machine hit 13TVe\>\"", "}"}], ",", 
-         RowBox[{"{", "CernPic", "}"}]}], "}"}], "]"}], "}"}], ",", 
-     RowBox[{"{", "previouspage", "}"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"tab04Fukushima", " ", "=", " ", 
-   RowBox[{"Grid", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"Grid", "[", 
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"{", "\"\<Nuclear has it's side effect.\>\"", "}"}], ",", 
-         RowBox[{"{", "FukushimaPic", "}"}]}], "}"}], "]"}], "}"}], ",", 
-     RowBox[{"{", "nextpage", "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"tab05Interactions", " ", "=", " ", 
-   RowBox[{"DynamicModule", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{"x", "=", 
-       RowBox[{"{", 
-        RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", 
-     RowBox[{"EventHandler", "[", 
-      RowBox[{
-       RowBox[{"{", 
-        RowBox[{
-         RowBox[{"Annotation", "[", 
-          RowBox[{
-           RowBox[{"Graphics", "[", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"Red", ",", 
-               RowBox[{"Disk", "[", "]"}]}], "}"}], ",", 
-             RowBox[{"PlotLabel", "\[Rule]", 
-              RowBox[{"Dynamic", "[", 
-               RowBox[{"x", "[", 
-                RowBox[{"[", "1", "]"}], "]"}], "]"}]}]}], "]"}], ",", "1", 
-           ",", "\"\<Mouse\>\""}], "]"}], ",", 
-         RowBox[{"Annotation", "[", 
-          RowBox[{
-           RowBox[{"Graphics", "[", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"Green", ",", 
-               RowBox[{"Disk", "[", "]"}]}], "}"}], ",", 
-             RowBox[{"PlotLabel", "\[Rule]", 
-              RowBox[{"Dynamic", "[", 
-               RowBox[{"x", "[", 
-                RowBox[{"[", "2", "]"}], "]"}], "]"}]}]}], "]"}], ",", "2", 
-           ",", "\"\<Mouse\>\""}], "]"}], ",", 
-         RowBox[{"Annotation", "[", 
-          RowBox[{
-           RowBox[{"Graphics", "[", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"Blue", ",", 
-               RowBox[{"Disk", "[", "]"}]}], "}"}], ",", 
-             RowBox[{"PlotLabel", "\[Rule]", 
-              RowBox[{"Dynamic", "[", 
-               RowBox[{"x", "[", 
-                RowBox[{"[", "3", "]"}], "]"}], "]"}]}]}], "]"}], ",", "3", 
-           ",", "\"\<Mouse\>\""}], "]"}]}], "}"}], ",", 
-       RowBox[{"{", 
-        RowBox[{"\"\<MouseClicked\>\"", "\[RuleDelayed]", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"x", "[", 
-            RowBox[{"[", 
-             RowBox[{"MouseAnnotation", "[", "]"}], "]"}], "]"}], "=", 
-           RowBox[{
-            RowBox[{"x", "[", 
-             RowBox[{"[", 
-              RowBox[{"MouseAnnotation", "[", "]"}], "]"}], "]"}], "+", 
-            "1"}]}], ")"}]}], "}"}]}], "]"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"tab06MenuViewTest", " ", "=", " ", 
-   RowBox[{"MenuView", "[", 
-    RowBox[{
-     RowBox[{
-      RowBox[{
-       RowBox[{
-        RowBox[{"Row", "[", 
-         RowBox[{"{", 
-          RowBox[{
-           RowBox[{"Rasterize", "[", 
-            RowBox[{
-             RowBox[{"Show", "[", 
-              RowBox[{
-               RowBox[{"CountryData", "[", 
-                RowBox[{"#", ",", "\"\<Shape\>\""}], "]"}], ",", 
-               RowBox[{"ImageSize", "\[Rule]", 
-                RowBox[{"{", 
-                 RowBox[{"40", ",", "40"}], "}"}]}]}], "]"}], ",", 
-             RowBox[{"Background", "\[Rule]", "None"}]}], "]"}], ",", "#"}], 
-          "}"}], "]"}], "\[Rule]", 
-        RowBox[{"Dynamic", "[", 
-         RowBox[{"DateListPlot", "[", 
-          RowBox[{"CountryData", "[", 
-           RowBox[{"#", ",", 
-            RowBox[{"{", 
-             RowBox[{
-              RowBox[{"{", "\"\<GDP\>\"", "}"}], ",", 
-              RowBox[{"{", 
-               RowBox[{"1970", ",", "2005"}], "}"}]}], "}"}]}], "]"}], "]"}], 
-         "]"}]}], "&"}], "/@", 
-      RowBox[{"CountryData", "[", "]"}]}], ",", 
-     RowBox[{"ImageSize", "\[Rule]", "Automatic"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"tab07SlideViewTest", " ", "=", " ", 
-   RowBox[{"SlideView", "[", 
-    RowBox[{
-     RowBox[{
-      RowBox[{
-       RowBox[{"Dynamic", "[", 
-        RowBox[{
-         RowBox[{"Column", "[", 
-          RowBox[{"{", 
-           RowBox[{
-            RowBox[{"Rasterize", "[", 
-             RowBox[{
-              RowBox[{"Show", "[", 
-               RowBox[{
-                RowBox[{"CountryData", "[", 
-                 RowBox[{"#", ",", "\"\<Shape\>\""}], "]"}], ",", 
-                RowBox[{"ImageSize", "\[Rule]", 
-                 RowBox[{"{", 
-                  RowBox[{"40", ",", "40"}], "}"}]}]}], "]"}], ",", 
-              RowBox[{"Background", "\[Rule]", "None"}]}], "]"}], ",", "#", 
-            ",", 
-            RowBox[{"DateListPlot", "[", 
-             RowBox[{"CountryData", "[", 
-              RowBox[{"#", ",", 
-               RowBox[{"{", 
-                RowBox[{
-                 RowBox[{"{", "\"\<GDP\>\"", "}"}], ",", 
-                 RowBox[{"{", 
-                  RowBox[{"1970", ",", "2005"}], "}"}]}], "}"}]}], "]"}], 
-             "]"}]}], "}"}], "]"}], ",", 
-         RowBox[{"SynchronousUpdating", "\[Rule]", "False"}]}], "]"}], "&"}], 
-      "/@", 
-      RowBox[{"CountryData", "[", "]"}]}], ",", 
-     RowBox[{"ImageSize", "\[Rule]", "Automatic"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"LingboTestSubTabs", " ", "=", " ", 
-   RowBox[{"{", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"\"\<UnderGraduate\>\"", "\[Rule]", " ", "subtab01"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\"\<Master\>\"", "\[Rule]", " ", "subtab02"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\"\<PhD\>\"", " ", "\[Rule]", " ", "subtab03"}]}], 
-    "\[IndentingNewLine]", "}"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"tab08NestedTabView", " ", "=", "\[IndentingNewLine]", 
-   RowBox[{"Pane", "[", 
-    RowBox[{"TabView", "[", "LingboTestSubTabs", "]"}], "]"}]}], 
-  ";"}]}], "Input",
- CellChangeTimes->{{3.642523570506686*^9, 3.642523763951065*^9}, 
-   3.6425257615822573`*^9, {3.6425258206422653`*^9, 3.642525846981999*^9}, {
-   3.642526051376786*^9, 3.6425260727679977`*^9}, {3.642526230277891*^9, 
-   3.6425262569788904`*^9}, {3.642526328132347*^9, 3.642526331033409*^9}, {
-   3.642526369297626*^9, 3.6425263758973217`*^9}, {3.6425269751439056`*^9, 
-   3.6425270541314206`*^9}, {3.6425294724857745`*^9, 3.642529509903395*^9}, {
-   3.6425295672720327`*^9, 3.642529650600309*^9}, {3.6425299083643446`*^9, 
-   3.642530022751707*^9}, {3.6427695021424804`*^9, 3.6427695174893637`*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"LingboTestTabs", "=", "\[IndentingNewLine]", 
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"\"\<Tiles\>\"", "\[Rule]", " ", "tab01Titles"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\"\<Mars\>\"", "\[Rule]", " ", "tab02Mars"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\"\<Cern\>\"", "\[Rule]", "tab03Cern"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\"\<Fukushima\>\"", "\[Rule]", " ", "tab04Fukushima"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\"\<Interactions\>\"", "\[Rule]", " ", "tab05Interactions"}], 
-     ",", "\[IndentingNewLine]", 
-     RowBox[{"\"\<MenuView\>\"", "\[Rule]", " ", "tab06MenuViewTest"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\"\<SlideView\>\"", "\[Rule]", "tab07SlideViewTest"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"\"\<NestedTab\>\"", "\[Rule]", " ", "tab08NestedTabView"}]}], 
-    "\[IndentingNewLine]", "}"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{"Pane", "[", 
-  RowBox[{"TabView", "[", "LingboTestTabs", "]"}], "]"}]}], "Input",
- CellChangeTimes->{{3.642523766648984*^9, 3.642523827579324*^9}, {
-  3.642523910002965*^9, 3.642523911346922*^9}, {3.642524166161991*^9, 
-  3.64252418174806*^9}, {3.6425242280720105`*^9, 3.642524231345338*^9}, {
-  3.6425243646138334`*^9, 3.6425244152968855`*^9}, {3.642524449682344*^9, 
-  3.642524455488473*^9}, {3.642524594786009*^9, 3.642524597836182*^9}, {
-  3.6425257700222597`*^9, 3.642525790153578*^9}, {3.6425300863532677`*^9, 
-  3.6425300978244305`*^9}, {3.642530174134719*^9, 3.6425302175535765`*^9}}],
-
 Cell[BoxData[
  PaneBox[
   TabViewBox[{{1,"\<\"Tiles\"\>"->
@@ -16632,7 +16313,7 @@ CbeIz9ja8hSmVf0+I6P/hUUl3FwU2xMfBpCkWGdZ5X8BAeB6Aw==
        True}]],
     DynamicModuleValues:>{}]}, {6,"\<\"MenuView\"\>"->
    TagBox[
-    DynamicModuleBox[{Typeset`var$$ = 1}, 
+    DynamicModuleBox[{Typeset`var$$ = 7}, 
      InterpretationBox[
       TagBox[
        PanelBox[GridBox[{
@@ -21289,7 +20970,8 @@ B4Y=
                 DateListPlot[
                  CountryData[
                   Entity["Country", "Andorra"], {{"GDP"}, {1970, 2005}}]], 
-                StandardForm]], 6->
+                StandardForm],
+               ImageSizeCache->{180., {49., 54.}}], 6->
               DynamicBox[ToBoxes[
                 DateListPlot[
                  CountryData[
@@ -21299,7 +20981,8 @@ B4Y=
                 DateListPlot[
                  CountryData[
                   Entity["Country", "Anguilla"], {{"GDP"}, {1970, 2005}}]], 
-                StandardForm]], 8->
+                StandardForm],
+               ImageSizeCache->{180., {49., 54.}}], 8->
               DynamicBox[ToBoxes[
                 DateListPlot[
                  CountryData[
@@ -26859,7 +26542,7 @@ B4Y=
            CountryData[
             Entity["Country", "Zimbabwe"], {{"GDP"}, {1970, 2005}}]]]}, 
        ImageSize -> Automatic]],
-     DynamicModuleValues:>Automatic],
+     DynamicModuleValues:>{}],
     Setting[#, {0}]& ]}, {7,"\<\"SlideView\"\>"->
    TagBox[
     DynamicModuleBox[{Typeset`var$$ = 1}, 
@@ -33188,20 +32871,18 @@ B4Y=
        DefaultBaseStyle->"Column",
        GridBoxAlignment->{"Columns" -> {{Right}}},
        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-      "Column"]}}, 3]]}}, 8]]], "Output",
- CellChangeTimes->{{3.642527067812152*^9, 3.6425270809184732`*^9}, {
-  3.6425271144723434`*^9, 3.642527168285616*^9}, {3.6425285622653537`*^9, 
-  3.642528566019025*^9}, {3.642528851498968*^9, 3.642528875613138*^9}, {
-  3.6425300737342753`*^9, 3.6425300805661354`*^9}, {3.642530241531628*^9, 
-  3.642530257585814*^9}, {3.642530344687766*^9, 3.642530346822305*^9}, {
-  3.6425304647553535`*^9, 3.642530465809102*^9}, {3.642530560192236*^9, 
-  3.6425305704185095`*^9}, {3.6427656267510386`*^9, 3.6427656704250755`*^9}, {
-  3.6427695269831104`*^9, 3.642769570508993*^9}, {3.6427696161163626`*^9, 
-  3.642769641116108*^9}}]
-}, Open  ]]
+      "Column"]}}, 3]]}}, 6]]], "Output", "PluginEmbeddedContent"]
 },
-WindowSize->{759, 733},
-WindowMargins->{{11, Automatic}, {Automatic, 7}},
+WindowSize->{1600, 817},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Visible->True,
+AuthoredSize->{602, 279},
+ScrollingOptions->{"HorizontalScrollRange"->Fit,
+"VerticalScrollRange"->Fit},
+ShowCellBracket->False,
+Deployed->True,
+CellContext->Notebook,
+TrackCellChangeTimes->False,
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -33216,18 +32897,11 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[1464, 33, 215, 4, 31, "Input"],
-Cell[1682, 39, 1175, 32, 112, "Input"],
-Cell[2860, 73, 1738, 44, 132, "Input"],
-Cell[4601, 119, 7564, 198, 752, "Input"],
-Cell[CellGroupData[{
-Cell[12190, 321, 1568, 29, 232, "Input"],
-Cell[13761, 352, 1768863, 32847, 294, "Output"]
-}, Open  ]]
+Cell[1464, 33, 1768365, 32840, 279, "Output"]
 }
 ]
 *)
 
 (* End of internal cache information *)
 
-(* NotebookSignature swpQRbJ@sIRjUDK2ZXKjmdTs *)
+(* NotebookSignature @vDpERxl9b4FsAwfnoWeDRpY *)
