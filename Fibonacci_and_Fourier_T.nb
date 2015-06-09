@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4283,        112]
-NotebookOptionsPosition[      3896,         94]
-NotebookOutlinePosition[      4239,        109]
-CellTagsIndexPosition[      4196,        106]
+NotebookDataLength[      4792,        124]
+NotebookOptionsPosition[      4476,        108]
+NotebookOutlinePosition[      4820,        123]
+CellTagsIndexPosition[      4777,        120]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,18 +21,41 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell[BoxData[
- RowBox[{"Manipulate", "[", 
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Clear", " ", "Garbage", " ", "and", " ", "Instance"}], " ", 
+   "*)"}], "\[IndentingNewLine]", 
   RowBox[{
-   RowBox[{"DiscretePlot", "[", 
+   RowBox[{
+    RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
     RowBox[{
-     RowBox[{"Fibonacci", "[", "x", "]"}], ",", 
+    "Plot", " ", "Fibonacci", " ", "value", " ", "discretely", " ", "and", 
+     " ", "dynamically"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{"Manipulate", "[", 
+    RowBox[{
+     RowBox[{"DiscretePlot", "[", 
+      RowBox[{
+       RowBox[{"Fibonacci", "[", "x", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "1", ",", "n"}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "100"}], "}"}]}]}], "]"}], ",", 
      RowBox[{"{", 
-      RowBox[{"x", ",", "1", ",", "n"}], "}"}], ",", 
-     RowBox[{"PlotRange", "\[Rule]", " ", 
+      RowBox[{"n", ",", "1", ",", "10"}], "}"}]}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{
+     "If", " ", "you", " ", "want", " ", "to", " ", "display", " ", "one", 
+      " ", "point", " ", "each", " ", "time"}], ",", " ", 
+     RowBox[{"just", " ", "replace", " ", 
       RowBox[{"{", 
-       RowBox[{"0", ",", "100"}], "}"}]}]}], "]"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"n", ",", "1", ",", "10"}], "}"}]}], "]"}]], "Input",
+       RowBox[{"x", ",", "1", ",", "n"}], "}"}], " ", "by", " ", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", "n", ",", "n"}], "}"}]}]}], " ", "*)"}]}]}]], "Input",
  CellChangeTimes->{{3.642858736654974*^9, 3.6428588005763426`*^9}, {
   3.6428588659297256`*^9, 3.6428588802869167`*^9}, {3.642858974657879*^9, 
   3.6428589777310767`*^9}, {3.642859051042878*^9, 3.642859051191967*^9}, {
@@ -43,7 +66,8 @@ Cell[BoxData[
   3.6428601261949472`*^9, 3.6428601673931856`*^9}, {3.6428604944264417`*^9, 
   3.6428605209012423`*^9}, {3.6428608073431845`*^9, 3.6428608357233276`*^9}, {
   3.6428620927761607`*^9, 3.6428621222460775`*^9}, {3.6428621694015436`*^9, 
-  3.6428621755989447`*^9}}],
+  3.6428621755989447`*^9}, {3.6428708622517004`*^9, 3.642870863714754*^9}, {
+  3.64287091121145*^9, 3.642871099682022*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -54,11 +78,11 @@ Cell[BoxData[
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`n$$], 1, 10}}, Typeset`size$$ = {360., {116., 120.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`n$30982$$ = 0}, 
+    True, $CellContext`n$3768$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`n$$ = 1}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`n$$, $CellContext`n$30982$$, 0]}, 
+        Hold[$CellContext`n$$, $CellContext`n$3768$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -79,21 +103,11 @@ Cell[BoxData[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.642860145303508*^9, 3.6428601684239187`*^9}, {
-   3.642860500222556*^9, 3.642860521444648*^9}, 3.6428608084869967`*^9, 
-   3.642860842045816*^9, 3.6428621014172926`*^9, {3.6428621631691203`*^9, 
-   3.642862176046262*^9}}]
-}, Open  ]],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.6428622016704464`*^9, 3.6428622026801643`*^9}}],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.642860868191372*^9, 3.6428608735231547`*^9}, {
-  3.6428620977566943`*^9, 3.642862098959551*^9}}]
+ CellChangeTimes->{3.6428709620024996`*^9, 3.6428711012021027`*^9}]
+}, Open  ]]
 },
-WindowSize->{759, 746},
-WindowMargins->{{Automatic, 39}, {17, Automatic}},
+WindowSize->{759, 733},
+WindowMargins->{{Automatic, 252}, {13, Automatic}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -109,13 +123,12 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 1198, 23, 52, "Input"],
-Cell[1781, 47, 1852, 37, 346, "Output"]
-}, Open  ]],
-Cell[3648, 87, 96, 1, 31, "Input"],
-Cell[3747, 90, 145, 2, 31, "Input"]
+Cell[580, 22, 2203, 47, 172, "Input"],
+Cell[2786, 71, 1674, 34, 379, "Output"]
+}, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
+
