@@ -1,0 +1,303 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10301,        294]
+NotebookOptionsPosition[      9677,        269]
+NotebookOutlinePosition[     10019,        284]
+CellTagsIndexPosition[      9976,        281]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mypath", " ", "=", " ", "\"\<E\:ff1a\\\\DownLoad\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"CernPic", " ", "=", " ", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{"mypath", ",", "\"\<CernLHC.jpeg\>\""}], "}"}], "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"FukushimaPic", " ", "=", " ", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{"mypath", ",", "\"\<Fukushima.jpg\>\""}], "}"}], "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"MarsPic", " ", "=", " ", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+     RowBox[{"FileNameJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{"mypath", ",", "\"\<Mars.jpg\>\""}], "}"}], "]"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Large"}]}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.64294412368262*^9, 3.6429441787096925`*^9}, {
+  3.6429447422466717`*^9, 3.642944744547304*^9}, {3.642945936467556*^9, 
+  3.642945936690709*^9}, {3.642946189610077*^9, 3.64294622426565*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Import", "::", "nffil"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"File not found during \[NoBreak]\\!\\(Import\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Import/nffil\\\", \
+ButtonNote -> \\\"Import::nffil\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642945254323305*^9, 3.6429462024471574`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Import", "::", "nffil"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"File not found during \[NoBreak]\\!\\(Import\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Import/nffil\\\", \
+ButtonNote -> \\\"Import::nffil\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642945254323305*^9, 3.64294620247618*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Import", "::", "nffil"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"File not found during \[NoBreak]\\!\\(Import\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Import/nffil\\\", \
+ButtonNote -> \\\"Import::nffil\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.642945254323305*^9, 3.6429462025062056`*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"subtab01", " ", "=", " ", 
+   RowBox[{"Row", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<UnderGraduate\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], 
+     ",", 
+     RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"subtab02", " ", "=", " ", 
+   RowBox[{"Column", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<Master\>\"", ",", "\"\<Level\>\""}], "}"}], ",", " ", 
+     RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"subtab03", " ", "=", " ", 
+   RowBox[{"Column", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<PhD\>\"", ",", "\"\<Level\>\""}], "}"}], ",", 
+     RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6429445290073614`*^9, 3.6429445937383037`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"tab01Titles", " ", "=", " ", 
+   RowBox[{"Row", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<Modern and Concurrent Physics\\r\>\"", ",", 
+       "\"\<has brought us\\r\>\"", ",", "\"\<to a historical point\\r\>\""}],
+       "}"}], ",", 
+     RowBox[{"Alignment", "\[Rule]", " ", "Left"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tab02Mars", " ", "=", " ", 
+   RowBox[{"Grid", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+      "{", "\"\<Man-made machine first landed on the Mars in 2003\>\"", "}"}],
+       ",", 
+      RowBox[{"{", "MarsPic", "}"}]}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tab03Cern", " ", "=", " ", 
+   RowBox[{"Grid", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", "\"\<Man-made machine hit 13TVe\>\"", "}"}], ",", 
+      RowBox[{"{", "CernPic", "}"}]}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tab04Fukushima", " ", "=", " ", 
+   RowBox[{"Grid", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", "\"\<Nuclear has it's side effect.\>\"", "}"}], ",", 
+      RowBox[{"{", "FukushimaPic", "}"}]}], "}"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6429444250400476`*^9, 3.642944486896354*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"LingboTestSubTabs", " ", "=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"\"\<UnderGraduate\>\"", "\[Rule]", " ", "subtab01"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<Master\>\"", "\[Rule]", " ", "subtab02"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<PhD\>\"", " ", "\[Rule]", " ", "subtab03"}]}], 
+    "\[IndentingNewLine]", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tab08NestedTabView", " ", "=", "\[IndentingNewLine]", 
+   RowBox[{"TabView", "[", "LingboTestSubTabs", "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.642944501863626*^9, 3.642944505042882*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"LingboTestTabs", "=", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\"\<Tiles\>\"", "\[Rule]", " ", "tab01Titles"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<Mars\>\"", "\[Rule]", " ", "tab02Mars"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<Cern\>\"", "\[Rule]", "tab03Cern"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<Fukushima\>\"", "\[Rule]", " ", "tab04Fukushima"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<NestedTab\>\"", "\[Rule]", " ", "tab08NestedTabView"}]}], 
+    "\[IndentingNewLine]", "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"TabView", "[", "LingboTestTabs", "]"}]}], "Input",
+ CellChangeTimes->{{3.6429443173558836`*^9, 3.642944317883258*^9}, {
+  3.6429461761715174`*^9, 3.6429461805996532`*^9}}],
+
+Cell[BoxData[
+ TabViewBox[{{1,"\<\"Tiles\"\>"->
+  TemplateBox[{
+   "\"Modern and Concurrent Physics\\r\"","\"has brought us\\r\"",
+    "\"to a historical point\\r\""},
+   "Row",
+   DisplayFunction->(PaneBox[
+     RowBox[{
+       TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
+   InterpretationFunction->(RowBox[{"Row", "[", 
+      RowBox[{
+        RowBox[{"{", 
+          TemplateSlotSequence[1, ","], "}"}], ",", 
+        RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
+  2,"\<\"Mars\"\>"->
+  TagBox[GridBox[{
+     {"\<\"Man-made machine first landed on the Mars in 2003\"\>"},
+     {"$Failed"}
+    },
+    AutoDelete->False,
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"]}, {3,"\<\"Cern\"\>"->
+  TagBox[GridBox[{
+     {"\<\"Man-made machine hit 13TVe\"\>"},
+     {"$Failed"}
+    },
+    AutoDelete->False,
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"]}, {4,"\<\"Fukushima\"\>"->
+  TagBox[GridBox[{
+     {"\<\"Nuclear has it's side effect.\"\>"},
+     {"$Failed"}
+    },
+    AutoDelete->False,
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"]}, {5,"\<\"NestedTab\"\>"->
+  TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
+   TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
+    "Row",
+    DisplayFunction->(PaneBox[
+      RowBox[{
+        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
+    InterpretationFunction->(RowBox[{"Row", "[", 
+       RowBox[{
+         RowBox[{"{", 
+           TemplateSlotSequence[1, ","], "}"}], ",", 
+         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
+   2,"\<\"Master\"\>"->
+   TagBox[GridBox[{
+      {"\<\"Master\"\>"},
+      {"\<\"Level\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}, {3,"\<\"PhD\"\>"->
+   TagBox[GridBox[{
+      {"\<\"PhD\"\>"},
+      {"\<\"Level\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}}, 1]}}, 1]], "Output",
+ CellChangeTimes->{{3.6429443889990873`*^9, 3.642944454244508*^9}, {
+  3.6429444935110483`*^9, 3.6429445504685965`*^9}, {3.642944583457008*^9, 
+  3.642944607149822*^9}, {3.6429452545254464`*^9, 3.642945259329892*^9}, {
+  3.6429461496727095`*^9, 3.642946153146167*^9}, {3.642946202614278*^9, 
+  3.6429462054152865`*^9}}]
+}, Open  ]]
+},
+WindowSize->{759, 733},
+WindowMargins->{{Automatic, 3}, {Automatic, 21}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1410, 37, 152, "Input"],
+Cell[1993, 61, 462, 9, 21, "Message"],
+Cell[2458, 72, 459, 9, 21, "Message"],
+Cell[2920, 83, 462, 9, 21, "Message"]
+}, Open  ]],
+Cell[3397, 95, 890, 25, 72, "Input"],
+Cell[4290, 122, 1285, 37, 152, "Input"],
+Cell[5578, 161, 673, 14, 152, "Input"],
+Cell[CellGroupData[{
+Cell[6276, 179, 825, 17, 172, "Input"],
+Cell[7104, 198, 2557, 68, 157, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

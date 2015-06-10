@@ -1,0 +1,2269 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     86790,       2260]
+NotebookOptionsPosition[     86279,       2239]
+NotebookOutlinePosition[     86621,       2254]
+CellTagsIndexPosition[     86578,       2251]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"subslide01", " ", "=", " ", 
+     RowBox[{"Column", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<UnderGraduate\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], 
+       ",", 
+       RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"subslide02", " ", "=", " ", 
+     RowBox[{"Column", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<Master\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], ",", 
+       " ", 
+       RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"subslide03", " ", "=", " ", 
+     RowBox[{"Column", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<PhD\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], ",", 
+       RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"subslide04", " ", "=", " ", 
+     RowBox[{"Column", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<Highschool\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], 
+       ",", 
+       RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"subslide05", " ", "=", " ", 
+     RowBox[{"Column", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"\"\<Elementary\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], 
+       ",", 
+       RowBox[{"Alignment", "\[Rule]", " ", "Left"}]}], "]"}]}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.6429581682381425`*^9, 3.6429582626848707`*^9}, {
+  3.6429586243793592`*^9, 3.642958632343999*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"subSlides", "=", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+    "subslide01", ",", "\[IndentingNewLine]", "subslide02", ",", 
+     "\[IndentingNewLine]", "subslide03", ",", "\[IndentingNewLine]", 
+     "subslide04", ",", "\[IndentingNewLine]", "subslide05"}], 
+    "\[IndentingNewLine]", "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6429561010767813`*^9, 3.642956124192965*^9}, {
+  3.6429581737290554`*^9, 3.6429581809571743`*^9}, {3.642958267446249*^9, 
+  3.642958288668331*^9}, {3.642958369791888*^9, 3.6429583885061703`*^9}, {
+  3.642958684576092*^9, 3.6429587508091*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"mainSTab01", " ", "=", " ", 
+   RowBox[{"SlideView", "[", "subSlides", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainSTab02", " ", "=", " ", 
+   RowBox[{"SlideView", "[", "subSlides", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainSTab03", " ", "=", " ", 
+   RowBox[{"SlideView", "[", "subSlides", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainSTab04", " ", "=", " ", 
+   RowBox[{"SlideView", "[", "subSlides", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainSTab05", " ", "=", " ", 
+   RowBox[{"SlideView", "[", "subSlides", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainSTab06", " ", "=", " ", 
+   RowBox[{"SlideView", "[", "subSlides", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainSTab07", " ", "=", " ", 
+   RowBox[{"SlideView", "[", "subSlides", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainSTab08", " ", "=", " ", 
+   RowBox[{"SlideView", "[", "subSlides", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainSTab09", " ", "=", " ", 
+   RowBox[{"SlideView", "[", "subSlides", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainSTab10", " ", "=", " ", 
+   RowBox[{"SlideView", "[", "subSlides", "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6429557991251388`*^9, 3.642955847505476*^9}, {
+  3.642956070636196*^9, 3.6429560892323756`*^9}, {3.642958184707831*^9, 
+  3.642958184995034*^9}, {3.6429584104075537`*^9, 3.642958513015377*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LingboMainSTabs", " ", "=", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"\"\<I\>\"", "\[Rule]", "mainSTab01"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<II\>\"", "\[Rule]", "mainSTab02"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<III\>\"", "\[Rule]", "mainSTab03"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<IV\>\"", "\[Rule]", "mainSTab04"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<V\>\"", "\[Rule]", "mainSTab05"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<VI\>\"", "\[Rule]", "mainSTab06"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<VII\>\"", "\[Rule]", "mainSTab07"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<VIII\>\"", "\[Rule]", "mainSTab08"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<IX\>\"", "\[Rule]", "mainSTab09"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<X\>\"", "\[Rule]", "mainSTab10"}]}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.6429585359266386`*^9, 3.6429585679413633`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"TabView", "[", "LingboMainSTabs", "]"}]], "Input",
+ CellChangeTimes->{{3.6429585546078987`*^9, 3.6429585721253333`*^9}}],
+
+Cell[BoxData[
+ TabViewBox[{{1,"\<\"I\"\>"->
+  TagBox[
+   DynamicModuleBox[{Typeset`var$$ = 1}, 
+    InterpretationBox[
+     TagBox[
+      PanelBox[GridBox[{
+         {
+          ItemBox[GridBox[{
+             {GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[FirstPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 1, Typeset`var$$ = 1],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LeftPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ > 1, 
+                    PreDecrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[RightPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ < 5, 
+                    PreIncrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LastPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 5, Typeset`var$$ = 5],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"]], 
+                   "Tooltip"]& ]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.]}, 
+                   Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.4]}, 
+                   Offset[0.2]}, "RowsIndexed" -> {}}]}
+            },
+            AutoDelete->False,
+            
+            GridBoxAlignment->{
+             "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Center}}, "RowsIndexed" -> {}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+           Alignment->Left,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           StyleBox[
+            PaneSelectorBox[{1->
+             TagBox[GridBox[{
+                {"\<\"UnderGraduate\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 2->
+             TagBox[GridBox[{
+                {"\<\"Master\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 3->
+             TagBox[GridBox[{
+                {"\<\"PhD\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 4->
+             TagBox[GridBox[{
+                {"\<\"Highschool\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 5->
+             TagBox[GridBox[{
+                {"\<\"Elementary\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"]}, Dynamic[Typeset`var$$],
+             Alignment->Automatic,
+             ImageSize->All,
+             TransitionDirection->Horizontal,
+             TransitionDuration->0.5,
+             TransitionEffect->Automatic],
+            Deployed->False,
+            StripOnInput->False],
+           Background->GrayLevel[1],
+           Frame->True,
+           FrameStyle->GrayLevel[0.8235294117647058],
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{"Columns" -> {{Left}}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       BaselinePosition->Automatic,
+       DefaultBaseStyle->"SlideView",
+       FrameMargins->6,
+       ImageMargins->Automatic],
+      Deploy,
+      DefaultBaseStyle->"Deploy"],
+     SlideView[{
+       Column[{"UnderGraduate\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Master\n", "Level\n"}, Alignment -> Left], 
+       Column[{"PhD\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Highschool\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Elementary\n", "Level\n"}, Alignment -> Left]}]],
+    DynamicModuleValues:>{}],
+   Setting[#, {0}]& ]}, {2,"\<\"II\"\>"->
+  TagBox[
+   DynamicModuleBox[{Typeset`var$$ = 1}, 
+    InterpretationBox[
+     TagBox[
+      PanelBox[GridBox[{
+         {
+          ItemBox[GridBox[{
+             {GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[FirstPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 1, Typeset`var$$ = 1],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LeftPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ > 1, 
+                    PreDecrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[RightPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ < 5, 
+                    PreIncrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LastPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 5, Typeset`var$$ = 5],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"]], 
+                   "Tooltip"]& ]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.]}, 
+                   Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.4]}, 
+                   Offset[0.2]}, "RowsIndexed" -> {}}]}
+            },
+            AutoDelete->False,
+            
+            GridBoxAlignment->{
+             "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Center}}, "RowsIndexed" -> {}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+           Alignment->Left,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           StyleBox[
+            PaneSelectorBox[{1->
+             TagBox[GridBox[{
+                {"\<\"UnderGraduate\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 2->
+             TagBox[GridBox[{
+                {"\<\"Master\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 3->
+             TagBox[GridBox[{
+                {"\<\"PhD\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 4->
+             TagBox[GridBox[{
+                {"\<\"Highschool\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 5->
+             TagBox[GridBox[{
+                {"\<\"Elementary\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"]}, Dynamic[Typeset`var$$],
+             Alignment->Automatic,
+             ImageSize->All,
+             TransitionDirection->Horizontal,
+             TransitionDuration->0.5,
+             TransitionEffect->Automatic],
+            Deployed->False,
+            StripOnInput->False],
+           Background->GrayLevel[1],
+           Frame->True,
+           FrameStyle->GrayLevel[0.8235294117647058],
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{"Columns" -> {{Left}}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       BaselinePosition->Automatic,
+       DefaultBaseStyle->"SlideView",
+       FrameMargins->6,
+       ImageMargins->Automatic],
+      Deploy,
+      DefaultBaseStyle->"Deploy"],
+     SlideView[{
+       Column[{"UnderGraduate\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Master\n", "Level\n"}, Alignment -> Left], 
+       Column[{"PhD\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Highschool\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Elementary\n", "Level\n"}, Alignment -> Left]}]],
+    DynamicModuleValues:>{}],
+   Setting[#, {0}]& ]}, {3,"\<\"III\"\>"->
+  TagBox[
+   DynamicModuleBox[{Typeset`var$$ = 1}, 
+    InterpretationBox[
+     TagBox[
+      PanelBox[GridBox[{
+         {
+          ItemBox[GridBox[{
+             {GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[FirstPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 1, Typeset`var$$ = 1],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LeftPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ > 1, 
+                    PreDecrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[RightPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ < 5, 
+                    PreIncrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LastPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 5, Typeset`var$$ = 5],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"]], 
+                   "Tooltip"]& ]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.]}, 
+                   Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.4]}, 
+                   Offset[0.2]}, "RowsIndexed" -> {}}]}
+            },
+            AutoDelete->False,
+            
+            GridBoxAlignment->{
+             "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Center}}, "RowsIndexed" -> {}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+           Alignment->Left,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           StyleBox[
+            PaneSelectorBox[{1->
+             TagBox[GridBox[{
+                {"\<\"UnderGraduate\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 2->
+             TagBox[GridBox[{
+                {"\<\"Master\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 3->
+             TagBox[GridBox[{
+                {"\<\"PhD\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 4->
+             TagBox[GridBox[{
+                {"\<\"Highschool\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 5->
+             TagBox[GridBox[{
+                {"\<\"Elementary\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"]}, Dynamic[Typeset`var$$],
+             Alignment->Automatic,
+             ImageSize->All,
+             TransitionDirection->Horizontal,
+             TransitionDuration->0.5,
+             TransitionEffect->Automatic],
+            Deployed->False,
+            StripOnInput->False],
+           Background->GrayLevel[1],
+           Frame->True,
+           FrameStyle->GrayLevel[0.8235294117647058],
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{"Columns" -> {{Left}}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       BaselinePosition->Automatic,
+       DefaultBaseStyle->"SlideView",
+       FrameMargins->6,
+       ImageMargins->Automatic],
+      Deploy,
+      DefaultBaseStyle->"Deploy"],
+     SlideView[{
+       Column[{"UnderGraduate\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Master\n", "Level\n"}, Alignment -> Left], 
+       Column[{"PhD\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Highschool\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Elementary\n", "Level\n"}, Alignment -> Left]}]],
+    DynamicModuleValues:>Automatic],
+   Setting[#, {0}]& ]}, {4,"\<\"IV\"\>"->
+  TagBox[
+   DynamicModuleBox[{Typeset`var$$ = 1}, 
+    InterpretationBox[
+     TagBox[
+      PanelBox[GridBox[{
+         {
+          ItemBox[GridBox[{
+             {GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[FirstPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 1, Typeset`var$$ = 1],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LeftPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ > 1, 
+                    PreDecrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[RightPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ < 5, 
+                    PreIncrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LastPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 5, Typeset`var$$ = 5],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"]], 
+                   "Tooltip"]& ]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.]}, 
+                   Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.4]}, 
+                   Offset[0.2]}, "RowsIndexed" -> {}}]}
+            },
+            AutoDelete->False,
+            
+            GridBoxAlignment->{
+             "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Center}}, "RowsIndexed" -> {}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+           Alignment->Left,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           StyleBox[
+            PaneSelectorBox[{1->
+             TagBox[GridBox[{
+                {"\<\"UnderGraduate\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 2->
+             TagBox[GridBox[{
+                {"\<\"Master\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 3->
+             TagBox[GridBox[{
+                {"\<\"PhD\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 4->
+             TagBox[GridBox[{
+                {"\<\"Highschool\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 5->
+             TagBox[GridBox[{
+                {"\<\"Elementary\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"]}, Dynamic[Typeset`var$$],
+             Alignment->Automatic,
+             ImageSize->All,
+             TransitionDirection->Horizontal,
+             TransitionDuration->0.5,
+             TransitionEffect->Automatic],
+            Deployed->False,
+            StripOnInput->False],
+           Background->GrayLevel[1],
+           Frame->True,
+           FrameStyle->GrayLevel[0.8235294117647058],
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{"Columns" -> {{Left}}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       BaselinePosition->Automatic,
+       DefaultBaseStyle->"SlideView",
+       FrameMargins->6,
+       ImageMargins->Automatic],
+      Deploy,
+      DefaultBaseStyle->"Deploy"],
+     SlideView[{
+       Column[{"UnderGraduate\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Master\n", "Level\n"}, Alignment -> Left], 
+       Column[{"PhD\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Highschool\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Elementary\n", "Level\n"}, Alignment -> Left]}]],
+    DynamicModuleValues:>{}],
+   Setting[#, {0}]& ]}, {5,"\<\"V\"\>"->
+  TagBox[
+   DynamicModuleBox[{Typeset`var$$ = 1}, 
+    InterpretationBox[
+     TagBox[
+      PanelBox[GridBox[{
+         {
+          ItemBox[GridBox[{
+             {GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[FirstPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 1, Typeset`var$$ = 1],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LeftPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ > 1, 
+                    PreDecrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[RightPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ < 5, 
+                    PreIncrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LastPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 5, Typeset`var$$ = 5],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"]], 
+                   "Tooltip"]& ]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.]}, 
+                   Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.4]}, 
+                   Offset[0.2]}, "RowsIndexed" -> {}}]}
+            },
+            AutoDelete->False,
+            
+            GridBoxAlignment->{
+             "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Center}}, "RowsIndexed" -> {}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+           Alignment->Left,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           StyleBox[
+            PaneSelectorBox[{1->
+             TagBox[GridBox[{
+                {"\<\"UnderGraduate\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 2->
+             TagBox[GridBox[{
+                {"\<\"Master\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 3->
+             TagBox[GridBox[{
+                {"\<\"PhD\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 4->
+             TagBox[GridBox[{
+                {"\<\"Highschool\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 5->
+             TagBox[GridBox[{
+                {"\<\"Elementary\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"]}, Dynamic[Typeset`var$$],
+             Alignment->Automatic,
+             ImageSize->All,
+             TransitionDirection->Horizontal,
+             TransitionDuration->0.5,
+             TransitionEffect->Automatic],
+            Deployed->False,
+            StripOnInput->False],
+           Background->GrayLevel[1],
+           Frame->True,
+           FrameStyle->GrayLevel[0.8235294117647058],
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{"Columns" -> {{Left}}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       BaselinePosition->Automatic,
+       DefaultBaseStyle->"SlideView",
+       FrameMargins->6,
+       ImageMargins->Automatic],
+      Deploy,
+      DefaultBaseStyle->"Deploy"],
+     SlideView[{
+       Column[{"UnderGraduate\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Master\n", "Level\n"}, Alignment -> Left], 
+       Column[{"PhD\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Highschool\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Elementary\n", "Level\n"}, Alignment -> Left]}]],
+    DynamicModuleValues:>Automatic],
+   Setting[#, {0}]& ]}, {6,"\<\"VI\"\>"->
+  TagBox[
+   DynamicModuleBox[{Typeset`var$$ = 1}, 
+    InterpretationBox[
+     TagBox[
+      PanelBox[GridBox[{
+         {
+          ItemBox[GridBox[{
+             {GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[FirstPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 1, Typeset`var$$ = 1],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LeftPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ > 1, 
+                    PreDecrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[RightPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ < 5, 
+                    PreIncrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LastPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 5, Typeset`var$$ = 5],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"]], 
+                   "Tooltip"]& ]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.]}, 
+                   Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.4]}, 
+                   Offset[0.2]}, "RowsIndexed" -> {}}]}
+            },
+            AutoDelete->False,
+            
+            GridBoxAlignment->{
+             "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Center}}, "RowsIndexed" -> {}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+           Alignment->Left,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           StyleBox[
+            PaneSelectorBox[{1->
+             TagBox[GridBox[{
+                {"\<\"UnderGraduate\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 2->
+             TagBox[GridBox[{
+                {"\<\"Master\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 3->
+             TagBox[GridBox[{
+                {"\<\"PhD\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 4->
+             TagBox[GridBox[{
+                {"\<\"Highschool\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 5->
+             TagBox[GridBox[{
+                {"\<\"Elementary\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"]}, Dynamic[Typeset`var$$],
+             Alignment->Automatic,
+             ImageSize->All,
+             TransitionDirection->Horizontal,
+             TransitionDuration->0.5,
+             TransitionEffect->Automatic],
+            Deployed->False,
+            StripOnInput->False],
+           Background->GrayLevel[1],
+           Frame->True,
+           FrameStyle->GrayLevel[0.8235294117647058],
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{"Columns" -> {{Left}}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       BaselinePosition->Automatic,
+       DefaultBaseStyle->"SlideView",
+       FrameMargins->6,
+       ImageMargins->Automatic],
+      Deploy,
+      DefaultBaseStyle->"Deploy"],
+     SlideView[{
+       Column[{"UnderGraduate\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Master\n", "Level\n"}, Alignment -> Left], 
+       Column[{"PhD\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Highschool\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Elementary\n", "Level\n"}, Alignment -> Left]}]],
+    DynamicModuleValues:>Automatic],
+   Setting[#, {0}]& ]}, {7,"\<\"VII\"\>"->
+  TagBox[
+   DynamicModuleBox[{Typeset`var$$ = 1}, 
+    InterpretationBox[
+     TagBox[
+      PanelBox[GridBox[{
+         {
+          ItemBox[GridBox[{
+             {GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[FirstPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 1, Typeset`var$$ = 1],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LeftPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ > 1, 
+                    PreDecrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[RightPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ < 5, 
+                    PreIncrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LastPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 5, Typeset`var$$ = 5],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"]], 
+                   "Tooltip"]& ]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.]}, 
+                   Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.4]}, 
+                   Offset[0.2]}, "RowsIndexed" -> {}}]}
+            },
+            AutoDelete->False,
+            
+            GridBoxAlignment->{
+             "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Center}}, "RowsIndexed" -> {}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+           Alignment->Left,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           StyleBox[
+            PaneSelectorBox[{1->
+             TagBox[GridBox[{
+                {"\<\"UnderGraduate\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 2->
+             TagBox[GridBox[{
+                {"\<\"Master\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 3->
+             TagBox[GridBox[{
+                {"\<\"PhD\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 4->
+             TagBox[GridBox[{
+                {"\<\"Highschool\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 5->
+             TagBox[GridBox[{
+                {"\<\"Elementary\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"]}, Dynamic[Typeset`var$$],
+             Alignment->Automatic,
+             ImageSize->All,
+             TransitionDirection->Horizontal,
+             TransitionDuration->0.5,
+             TransitionEffect->Automatic],
+            Deployed->False,
+            StripOnInput->False],
+           Background->GrayLevel[1],
+           Frame->True,
+           FrameStyle->GrayLevel[0.8235294117647058],
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{"Columns" -> {{Left}}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       BaselinePosition->Automatic,
+       DefaultBaseStyle->"SlideView",
+       FrameMargins->6,
+       ImageMargins->Automatic],
+      Deploy,
+      DefaultBaseStyle->"Deploy"],
+     SlideView[{
+       Column[{"UnderGraduate\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Master\n", "Level\n"}, Alignment -> Left], 
+       Column[{"PhD\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Highschool\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Elementary\n", "Level\n"}, Alignment -> Left]}]],
+    DynamicModuleValues:>Automatic],
+   Setting[#, {0}]& ]}, {8,"\<\"VIII\"\>"->
+  TagBox[
+   DynamicModuleBox[{Typeset`var$$ = 1}, 
+    InterpretationBox[
+     TagBox[
+      PanelBox[GridBox[{
+         {
+          ItemBox[GridBox[{
+             {GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[FirstPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 1, Typeset`var$$ = 1],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LeftPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ > 1, 
+                    PreDecrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[RightPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ < 5, 
+                    PreIncrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LastPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 5, Typeset`var$$ = 5],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"]], 
+                   "Tooltip"]& ]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.]}, 
+                   Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.4]}, 
+                   Offset[0.2]}, "RowsIndexed" -> {}}]}
+            },
+            AutoDelete->False,
+            
+            GridBoxAlignment->{
+             "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Center}}, "RowsIndexed" -> {}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+           Alignment->Left,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           StyleBox[
+            PaneSelectorBox[{1->
+             TagBox[GridBox[{
+                {"\<\"UnderGraduate\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 2->
+             TagBox[GridBox[{
+                {"\<\"Master\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 3->
+             TagBox[GridBox[{
+                {"\<\"PhD\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 4->
+             TagBox[GridBox[{
+                {"\<\"Highschool\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 5->
+             TagBox[GridBox[{
+                {"\<\"Elementary\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"]}, Dynamic[Typeset`var$$],
+             Alignment->Automatic,
+             ImageSize->All,
+             TransitionDirection->Horizontal,
+             TransitionDuration->0.5,
+             TransitionEffect->Automatic],
+            Deployed->False,
+            StripOnInput->False],
+           Background->GrayLevel[1],
+           Frame->True,
+           FrameStyle->GrayLevel[0.8235294117647058],
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{"Columns" -> {{Left}}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       BaselinePosition->Automatic,
+       DefaultBaseStyle->"SlideView",
+       FrameMargins->6,
+       ImageMargins->Automatic],
+      Deploy,
+      DefaultBaseStyle->"Deploy"],
+     SlideView[{
+       Column[{"UnderGraduate\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Master\n", "Level\n"}, Alignment -> Left], 
+       Column[{"PhD\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Highschool\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Elementary\n", "Level\n"}, Alignment -> Left]}]],
+    DynamicModuleValues:>{}],
+   Setting[#, {0}]& ]}, {9,"\<\"IX\"\>"->
+  TagBox[
+   DynamicModuleBox[{Typeset`var$$ = 1}, 
+    InterpretationBox[
+     TagBox[
+      PanelBox[GridBox[{
+         {
+          ItemBox[GridBox[{
+             {GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[FirstPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 1, Typeset`var$$ = 1],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LeftPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ > 1, 
+                    PreDecrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[RightPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ < 5, 
+                    PreIncrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LastPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 5, Typeset`var$$ = 5],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"]], 
+                   "Tooltip"]& ]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.]}, 
+                   Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.4]}, 
+                   Offset[0.2]}, "RowsIndexed" -> {}}]}
+            },
+            AutoDelete->False,
+            
+            GridBoxAlignment->{
+             "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Center}}, "RowsIndexed" -> {}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+           Alignment->Left,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           StyleBox[
+            PaneSelectorBox[{1->
+             TagBox[GridBox[{
+                {"\<\"UnderGraduate\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 2->
+             TagBox[GridBox[{
+                {"\<\"Master\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 3->
+             TagBox[GridBox[{
+                {"\<\"PhD\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 4->
+             TagBox[GridBox[{
+                {"\<\"Highschool\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 5->
+             TagBox[GridBox[{
+                {"\<\"Elementary\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"]}, Dynamic[Typeset`var$$],
+             Alignment->Automatic,
+             ImageSize->All,
+             TransitionDirection->Horizontal,
+             TransitionDuration->0.5,
+             TransitionEffect->Automatic],
+            Deployed->False,
+            StripOnInput->False],
+           Background->GrayLevel[1],
+           Frame->True,
+           FrameStyle->GrayLevel[0.8235294117647058],
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{"Columns" -> {{Left}}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       BaselinePosition->Automatic,
+       DefaultBaseStyle->"SlideView",
+       FrameMargins->6,
+       ImageMargins->Automatic],
+      Deploy,
+      DefaultBaseStyle->"Deploy"],
+     SlideView[{
+       Column[{"UnderGraduate\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Master\n", "Level\n"}, Alignment -> Left], 
+       Column[{"PhD\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Highschool\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Elementary\n", "Level\n"}, Alignment -> Left]}]],
+    DynamicModuleValues:>Automatic],
+   Setting[#, {0}]& ]}, {10,"\<\"X\"\>"->
+  TagBox[
+   DynamicModuleBox[{Typeset`var$$ = 5}, 
+    InterpretationBox[
+     TagBox[
+      PanelBox[GridBox[{
+         {
+          ItemBox[GridBox[{
+             {GridBox[{
+                {
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[FirstPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 1, Typeset`var$$ = 1],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipFirstSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LeftPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ > 1, 
+                    PreDecrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipPreviousSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[RightPointer]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ < 5, 
+                    PreIncrement[Typeset`var$$]],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipNextSlide"]], 
+                   "Tooltip"]& ], 
+                 TagBox[
+                  TooltipBox[
+                   ButtonBox[
+                    StyleBox["\<\"\[LastPage]\"\>",
+                    StripOnInput->False,
+                    FontSize->18],
+                    Appearance->"Palette",
+                    ButtonFunction:>If[Typeset`var$$ =!= 5, Typeset`var$$ = 5],
+                    Enabled->Automatic,
+                    Evaluator->Automatic,
+                    ImageSize->Small,
+                    Method->"Preemptive"],
+                   DynamicBox[
+                    ToBoxes[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"], 
+                    StandardForm]]],
+                  Annotation[#, 
+                   Dynamic[
+                    FEPrivate`FrontEndResource[
+                    "SlideshowToolbarText", "TooltipLastSlide"]], 
+                   "Tooltip"]& ]}
+               },
+               AutoDelete->False,
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+               GridBoxSpacings->{"Columns" -> {
+                   Offset[0.27999999999999997`], {
+                    Offset[0.]}, 
+                   Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {
+                   Offset[0.2], {
+                    Offset[0.4]}, 
+                   Offset[0.2]}, "RowsIndexed" -> {}}]}
+            },
+            AutoDelete->False,
+            
+            GridBoxAlignment->{
+             "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
+              "Rows" -> {{Center}}, "RowsIndexed" -> {}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+           Alignment->Left,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           StyleBox[
+            PaneSelectorBox[{1->
+             TagBox[GridBox[{
+                {"\<\"UnderGraduate\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 2->
+             TagBox[GridBox[{
+                {"\<\"Master\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 3->
+             TagBox[GridBox[{
+                {"\<\"PhD\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 4->
+             TagBox[GridBox[{
+                {"\<\"Highschool\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"], 5->
+             TagBox[GridBox[{
+                {"\<\"Elementary\\r\"\>"},
+                {"\<\"Level\\r\"\>"}
+               },
+               DefaultBaseStyle->"Column",
+               GridBoxAlignment->{"Columns" -> {{Left}}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+              "Column"]}, Dynamic[Typeset`var$$],
+             Alignment->Automatic,
+             ImageSize->All,
+             TransitionDirection->Horizontal,
+             TransitionDuration->0.5,
+             TransitionEffect->Automatic],
+            Deployed->False,
+            StripOnInput->False],
+           Background->GrayLevel[1],
+           Frame->True,
+           FrameStyle->GrayLevel[0.8235294117647058],
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{"Columns" -> {{Left}}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       BaselinePosition->Automatic,
+       DefaultBaseStyle->"SlideView",
+       FrameMargins->6,
+       ImageMargins->Automatic],
+      Deploy,
+      DefaultBaseStyle->"Deploy"],
+     SlideView[{
+       Column[{"UnderGraduate\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Master\n", "Level\n"}, Alignment -> Left], 
+       Column[{"PhD\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Highschool\n", "Level\n"}, Alignment -> Left], 
+       Column[{"Elementary\n", "Level\n"}, Alignment -> Left]}]],
+    DynamicModuleValues:>{}],
+   Setting[#, {0}]& ]}}, 1]], "Output",
+ CellChangeTimes->{{3.6429585736304145`*^9, 3.64295861001653*^9}, {
+   3.6429587280959578`*^9, 3.642958760815216*^9}, 3.642959331430493*^9}]
+}, Open  ]]
+},
+WindowSize->{759, 713},
+WindowMargins->{{Automatic, 0}, {41, Automatic}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 94, 2, 31, "Input"],
+Cell[655, 24, 1678, 48, 132, "Input"],
+Cell[2336, 74, 624, 12, 152, "Input"],
+Cell[2963, 88, 1564, 42, 212, "Input"],
+Cell[4530, 132, 1073, 25, 232, "Input"],
+Cell[CellGroupData[{
+Cell[5628, 161, 144, 2, 31, "Input"],
+Cell[5775, 165, 80488, 2071, 219, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
