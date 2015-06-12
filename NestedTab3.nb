@@ -1,56 +1,182 @@
-(* Content-type: application/vnd.wolfram.cdf.text *)
+(* Content-type: application/vnd.wolfram.mathematica *)
 
-(*** Wolfram CDF File ***)
-(* http://www.wolfram.com/cdf *)
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
 
 (* CreatedBy='Mathematica 10.1' *)
-
-(*************************************************************************)
-(*                                                                       *)
-(*  The Mathematica License under which this file was created prohibits  *)
-(*  restricting third parties in receipt of this file from republishing  *)
-(*  or redistributing it by any means, including but not limited to      *)
-(*  rights management or terms of use, without the express consent of    *)
-(*  Wolfram Research, Inc. For additional information concerning CDF     *)
-(*  licensing and redistribution see:                                    *)
-(*                                                                       *)
-(*        www.wolfram.com/cdf/adopting-cdf/licensing-options.html        *)
-(*                                                                       *)
-(*************************************************************************)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
-NotebookDataPosition[      1064,         20]
-NotebookDataLength[     17116,        483]
-NotebookOptionsPosition[     17617,        476]
-NotebookOutlinePosition[     18120,        498]
-CellTagsIndexPosition[     18077,        495]
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     20945,        598]
+NotebookOptionsPosition[     20513,        579]
+NotebookOutlinePosition[     20856,        594]
+CellTagsIndexPosition[     20813,        591]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], ";"}]], "Input"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"subtab01", " ", "=", " ", 
+   RowBox[{"Column", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<UnderGraduate\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], 
+     ",", 
+     RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"subtab02", " ", "=", " ", 
+   RowBox[{"Column", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<Master\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], ",", " ", 
+     RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"subtab03", " ", "=", " ", 
+   RowBox[{"Column", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<PhD\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], ",", 
+     RowBox[{"Alignment", "\[Rule]", " ", "Left"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"subtab04", " ", "=", " ", 
+   RowBox[{"Column", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<Highschool\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], ",", 
+     RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"subtab05", " ", "=", " ", 
+   RowBox[{"Column", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\"\<Elementary\\r\>\"", ",", "\"\<Level\\r\>\""}], "}"}], ",", 
+     RowBox[{"Alignment", "\[Rule]", " ", "Left"}]}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.642954437949397*^9, 3.642954524011881*^9}, {
+  3.642954789688103*^9, 3.6429547968071356`*^9}, {3.6430286931911445`*^9, 
+  3.6430287078901854`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LingboSubTabs", " ", "=", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"\"\<UnderGraduate\>\"", "\[Rule]", "subtab01"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<Master\>\"", "\[Rule]", "subtab02"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<PhD\>\"", "\[Rule]", " ", "subtab03"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<HighSchool\>\"", "\[Rule]", " ", "subtab04"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<Elementary\>\"", "\[Rule]", " ", "subtab05"}]}], 
+    "\[IndentingNewLine]", "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.642954763492899*^9, 3.6429548918009768`*^9}, {
+  3.642954975690724*^9, 3.6429549970708876`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"mainTab01", "=", " ", 
+   RowBox[{"TabView", "[", "LingboSubTabs", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainTab02", "=", " ", 
+   RowBox[{"TabView", "[", "LingboSubTabs", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainTab03", "=", " ", 
+   RowBox[{"TabView", "[", "LingboSubTabs", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainTab04", "=", " ", 
+   RowBox[{"TabView", "[", "LingboSubTabs", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainTab05", "=", " ", 
+   RowBox[{"TabView", "[", "LingboSubTabs", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainTab06", "=", " ", 
+   RowBox[{"TabView", "[", "LingboSubTabs", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainTab07", "=", " ", 
+   RowBox[{"TabView", "[", "LingboSubTabs", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainTab08", "=", " ", 
+   RowBox[{"TabView", "[", "LingboSubTabs", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainTab09", "=", " ", 
+   RowBox[{"TabView", "[", "LingboSubTabs", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mainTab10", "=", " ", 
+   RowBox[{"TabView", "[", "LingboSubTabs", "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LingboMainTabs", " ", "=", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"\"\<I\>\"", "\[Rule]", "mainTab01"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<II\>\"", "\[Rule]", "mainTab02"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<III\>\"", "\[Rule]", "mainTab03"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<IV\>\"", "\[Rule]", "mainTab04"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<V\>\"", "\[Rule]", "mainTab05"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<VI\>\"", "\[Rule]", "mainTab06"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<VII\>\"", "\[Rule]", "mainTab07"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<VIII\>\"", "\[Rule]", "mainTab08"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<IX\>\"", "\[Rule]", "mainTab09"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"\"\<X\>\"", "\[Rule]", "mainTab10"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"TabView", "[", 
+  RowBox[{"LingboMainTabs", ",", 
+   RowBox[{"ControlPlacement", "\[Rule]", "Left"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.642955000465282*^9, 3.6429553780527477`*^9}, {
+  3.643028748057476*^9, 3.643028792621191*^9}, {3.643028823360119*^9, 
+  3.643028848036584*^9}, {3.6430298952675095`*^9, 3.6430299133951674`*^9}}],
+
+Cell[BoxData[
  TabViewBox[{{1,"\<\"I\"\>"->
   TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
-   TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
-    "Row",
-    DisplayFunction->(PaneBox[
-      RowBox[{
-        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
-    InterpretationFunction->(RowBox[{"Row", "[", 
-       RowBox[{
-         RowBox[{"{", 
-           TemplateSlotSequence[1, ","], "}"}], ",", 
-         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
-   2,"\<\"Master\"\>"->
+   TagBox[GridBox[{
+      {"\<\"UnderGraduate\\r\"\>"},
+      {"\<\"Level\\r\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}, {2,"\<\"Master\"\>"->
    TagBox[GridBox[{
       {"\<\"Master\\r\"\>"},
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Center}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {3,"\<\"PhD\"\>"->
    TagBox[GridBox[{
@@ -58,7 +184,7 @@ Cell[BoxData[
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Right}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {4,"\<\"HighSchool\"\>"->
    TagBox[GridBox[{
@@ -78,23 +204,20 @@ Cell[BoxData[
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}}, 1]}, {2,"\<\"II\"\>"->
   TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
-   TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
-    "Row",
-    DisplayFunction->(PaneBox[
-      RowBox[{
-        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
-    InterpretationFunction->(RowBox[{"Row", "[", 
-       RowBox[{
-         RowBox[{"{", 
-           TemplateSlotSequence[1, ","], "}"}], ",", 
-         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
-   2,"\<\"Master\"\>"->
+   TagBox[GridBox[{
+      {"\<\"UnderGraduate\\r\"\>"},
+      {"\<\"Level\\r\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}, {2,"\<\"Master\"\>"->
    TagBox[GridBox[{
       {"\<\"Master\\r\"\>"},
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Center}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {3,"\<\"PhD\"\>"->
    TagBox[GridBox[{
@@ -102,7 +225,7 @@ Cell[BoxData[
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Right}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {4,"\<\"HighSchool\"\>"->
    TagBox[GridBox[{
@@ -122,23 +245,20 @@ Cell[BoxData[
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}}, 1]}, {3,"\<\"III\"\>"->
   TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
-   TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
-    "Row",
-    DisplayFunction->(PaneBox[
-      RowBox[{
-        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
-    InterpretationFunction->(RowBox[{"Row", "[", 
-       RowBox[{
-         RowBox[{"{", 
-           TemplateSlotSequence[1, ","], "}"}], ",", 
-         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
-   2,"\<\"Master\"\>"->
+   TagBox[GridBox[{
+      {"\<\"UnderGraduate\\r\"\>"},
+      {"\<\"Level\\r\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}, {2,"\<\"Master\"\>"->
    TagBox[GridBox[{
       {"\<\"Master\\r\"\>"},
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Center}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {3,"\<\"PhD\"\>"->
    TagBox[GridBox[{
@@ -146,7 +266,7 @@ Cell[BoxData[
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Right}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {4,"\<\"HighSchool\"\>"->
    TagBox[GridBox[{
@@ -166,23 +286,20 @@ Cell[BoxData[
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}}, 1]}, {4,"\<\"IV\"\>"->
   TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
-   TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
-    "Row",
-    DisplayFunction->(PaneBox[
-      RowBox[{
-        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
-    InterpretationFunction->(RowBox[{"Row", "[", 
-       RowBox[{
-         RowBox[{"{", 
-           TemplateSlotSequence[1, ","], "}"}], ",", 
-         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
-   2,"\<\"Master\"\>"->
+   TagBox[GridBox[{
+      {"\<\"UnderGraduate\\r\"\>"},
+      {"\<\"Level\\r\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}, {2,"\<\"Master\"\>"->
    TagBox[GridBox[{
       {"\<\"Master\\r\"\>"},
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Center}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {3,"\<\"PhD\"\>"->
    TagBox[GridBox[{
@@ -190,7 +307,7 @@ Cell[BoxData[
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Right}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {4,"\<\"HighSchool\"\>"->
    TagBox[GridBox[{
@@ -210,23 +327,20 @@ Cell[BoxData[
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}}, 1]}, {5,"\<\"V\"\>"->
   TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
-   TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
-    "Row",
-    DisplayFunction->(PaneBox[
-      RowBox[{
-        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
-    InterpretationFunction->(RowBox[{"Row", "[", 
-       RowBox[{
-         RowBox[{"{", 
-           TemplateSlotSequence[1, ","], "}"}], ",", 
-         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
-   2,"\<\"Master\"\>"->
+   TagBox[GridBox[{
+      {"\<\"UnderGraduate\\r\"\>"},
+      {"\<\"Level\\r\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}, {2,"\<\"Master\"\>"->
    TagBox[GridBox[{
       {"\<\"Master\\r\"\>"},
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Center}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {3,"\<\"PhD\"\>"->
    TagBox[GridBox[{
@@ -234,7 +348,7 @@ Cell[BoxData[
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Right}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {4,"\<\"HighSchool\"\>"->
    TagBox[GridBox[{
@@ -254,23 +368,20 @@ Cell[BoxData[
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}}, 1]}, {6,"\<\"VI\"\>"->
   TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
-   TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
-    "Row",
-    DisplayFunction->(PaneBox[
-      RowBox[{
-        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
-    InterpretationFunction->(RowBox[{"Row", "[", 
-       RowBox[{
-         RowBox[{"{", 
-           TemplateSlotSequence[1, ","], "}"}], ",", 
-         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
-   2,"\<\"Master\"\>"->
+   TagBox[GridBox[{
+      {"\<\"UnderGraduate\\r\"\>"},
+      {"\<\"Level\\r\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}, {2,"\<\"Master\"\>"->
    TagBox[GridBox[{
       {"\<\"Master\\r\"\>"},
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Center}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {3,"\<\"PhD\"\>"->
    TagBox[GridBox[{
@@ -278,7 +389,7 @@ Cell[BoxData[
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Right}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {4,"\<\"HighSchool\"\>"->
    TagBox[GridBox[{
@@ -298,23 +409,20 @@ Cell[BoxData[
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}}, 1]}, {7,"\<\"VII\"\>"->
   TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
-   TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
-    "Row",
-    DisplayFunction->(PaneBox[
-      RowBox[{
-        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
-    InterpretationFunction->(RowBox[{"Row", "[", 
-       RowBox[{
-         RowBox[{"{", 
-           TemplateSlotSequence[1, ","], "}"}], ",", 
-         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
-   2,"\<\"Master\"\>"->
+   TagBox[GridBox[{
+      {"\<\"UnderGraduate\\r\"\>"},
+      {"\<\"Level\\r\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}, {2,"\<\"Master\"\>"->
    TagBox[GridBox[{
       {"\<\"Master\\r\"\>"},
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Center}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {3,"\<\"PhD\"\>"->
    TagBox[GridBox[{
@@ -322,7 +430,7 @@ Cell[BoxData[
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Right}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {4,"\<\"HighSchool\"\>"->
    TagBox[GridBox[{
@@ -342,23 +450,20 @@ Cell[BoxData[
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}}, 1]}, {8,"\<\"VIII\"\>"->
   TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
-   TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
-    "Row",
-    DisplayFunction->(PaneBox[
-      RowBox[{
-        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
-    InterpretationFunction->(RowBox[{"Row", "[", 
-       RowBox[{
-         RowBox[{"{", 
-           TemplateSlotSequence[1, ","], "}"}], ",", 
-         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
-   2,"\<\"Master\"\>"->
+   TagBox[GridBox[{
+      {"\<\"UnderGraduate\\r\"\>"},
+      {"\<\"Level\\r\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}, {2,"\<\"Master\"\>"->
    TagBox[GridBox[{
       {"\<\"Master\\r\"\>"},
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Center}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {3,"\<\"PhD\"\>"->
    TagBox[GridBox[{
@@ -366,7 +471,7 @@ Cell[BoxData[
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Right}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {4,"\<\"HighSchool\"\>"->
    TagBox[GridBox[{
@@ -386,23 +491,20 @@ Cell[BoxData[
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}}, 1]}, {9,"\<\"IX\"\>"->
   TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
-   TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
-    "Row",
-    DisplayFunction->(PaneBox[
-      RowBox[{
-        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
-    InterpretationFunction->(RowBox[{"Row", "[", 
-       RowBox[{
-         RowBox[{"{", 
-           TemplateSlotSequence[1, ","], "}"}], ",", 
-         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
-   2,"\<\"Master\"\>"->
+   TagBox[GridBox[{
+      {"\<\"UnderGraduate\\r\"\>"},
+      {"\<\"Level\\r\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}, {2,"\<\"Master\"\>"->
    TagBox[GridBox[{
       {"\<\"Master\\r\"\>"},
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Center}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {3,"\<\"PhD\"\>"->
    TagBox[GridBox[{
@@ -410,7 +512,7 @@ Cell[BoxData[
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Right}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {4,"\<\"HighSchool\"\>"->
    TagBox[GridBox[{
@@ -430,23 +532,20 @@ Cell[BoxData[
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}}, 1]}, {10,"\<\"X\"\>"->
   TabViewBox[{{1,"\<\"UnderGraduate\"\>"->
-   TemplateBox[{"\"UnderGraduate\\r\"","\"Level\\r\""},
-    "Row",
-    DisplayFunction->(PaneBox[
-      RowBox[{
-        TemplateSlotSequence[1, "\[InvisibleSpace]"]}], Alignment -> Left]& ),
-    InterpretationFunction->(RowBox[{"Row", "[", 
-       RowBox[{
-         RowBox[{"{", 
-           TemplateSlotSequence[1, ","], "}"}], ",", 
-         RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}]& )]}, {
-   2,"\<\"Master\"\>"->
+   TagBox[GridBox[{
+      {"\<\"UnderGraduate\\r\"\>"},
+      {"\<\"Level\\r\"\>"}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{"Columns" -> {{Left}}},
+     GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+    "Column"]}, {2,"\<\"Master\"\>"->
    TagBox[GridBox[{
       {"\<\"Master\\r\"\>"},
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Center}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {3,"\<\"PhD\"\>"->
    TagBox[GridBox[{
@@ -454,7 +553,7 @@ Cell[BoxData[
       {"\<\"Level\\r\"\>"}
      },
      DefaultBaseStyle->"Column",
-     GridBoxAlignment->{"Columns" -> {{Right}}},
+     GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
     "Column"]}, {4,"\<\"HighSchool\"\>"->
    TagBox[GridBox[{
@@ -472,17 +571,14 @@ Cell[BoxData[
      DefaultBaseStyle->"Column",
      GridBoxAlignment->{"Columns" -> {{Left}}},
      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
-    "Column"]}}, 5]}}, 9]], "Output", "PluginEmbeddedContent"]
+    "Column"]}}, 1]}}, 1,
+  ControlPlacement->Left]], "Output",
+ CellChangeTimes->{{3.6430288087890167`*^9, 3.6430288514408092`*^9}, 
+   3.643029916451396*^9}]
+}, Open  ]]
 },
-WindowSize->{380, 163},
-Visible->True,
-AuthoredSize->{380, 163},
-ScrollingOptions->{"HorizontalScrollRange"->Fit,
-"VerticalScrollRange"->Fit},
-ShowCellBracket->False,
-Deployed->True,
-CellContext->Notebook,
-TrackCellChangeTimes->False,
+WindowSize->{759, 733},
+WindowMargins->{{43, Automatic}, {31, Automatic}},
 FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -497,11 +593,15 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[1464, 33, 16149, 441, 163, "Output"]
+Cell[558, 20, 94, 2, 31, "Input"],
+Cell[655, 24, 1574, 44, 112, "Input"],
+Cell[2232, 70, 736, 16, 152, "Input"],
+Cell[CellGroupData[{
+Cell[2993, 90, 2665, 70, 452, "Input"],
+Cell[5661, 162, 14836, 414, 293, "Output"]
+}, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
-(* NotebookSignature Rv0VPwa3UpjEsA1eLhPuaJ1X *)
