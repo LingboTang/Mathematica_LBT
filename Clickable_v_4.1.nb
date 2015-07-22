@@ -1,0 +1,374 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15282,        365]
+NotebookOptionsPosition[     14846,        346]
+NotebookOutlinePosition[     15193,        361]
+CellTagsIndexPosition[     15150,        358]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Remove", "[", "\"\<Global`*\>\"", "]"}], ";"}]}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", "\[IndentingNewLine]", "\t", 
+   RowBox[{
+   "Main", " ", "User", " ", "Interface", " ", "is", " ", "defined", " ", 
+    "by", " ", "Column", "\[IndentingNewLine]", "   ", "Two", " ", "sections",
+     " ", "are", " ", "displaying", " ", "on", " ", "the", " ", 
+    RowBox[{"panel", ".", "\[IndentingNewLine]", "  ", "Buttons"}], " ", 
+    "are", " ", "on", " ", "the", " ", "top", " ", 
+    RowBox[{"section", ".", "\[IndentingNewLine]", "  ", "Display"}], " ", 
+    "objects", " ", "are", " ", "on", " ", "the", " ", "buttom", " ", 
+    RowBox[{"section", "."}]}], "\[IndentingNewLine]", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Column", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+       "Graphics3D", " ", "will", " ", "append", " ", "all", " ", "the", " ", 
+        "buttons", " ", "in", " ", "one", " ", "3", "D", " ", "world"}], 
+       "*)"}], "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Graphics3D", "[", "\[IndentingNewLine]", 
+        RowBox[{"(*", " ", 
+         RowBox[{
+         "Just", " ", "let", " ", "them", " ", "choose", " ", "the", " ", 
+          "index"}], " ", "*)"}], "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Map", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Button", "[", 
+             RowBox[{
+              RowBox[{"#", "[", 
+               RowBox[{"[", "1", "]"}], "]"}], ",", 
+              RowBox[{"index", " ", "=", " ", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"Position", "[", 
+                  RowBox[{"Solar", ",", 
+                   RowBox[{"#", "[", 
+                    RowBox[{"[", "1", "]"}], "]"}]}], "]"}], "[", 
+                 RowBox[{"[", "1", "]"}], "]"}], "[", 
+                RowBox[{"[", "1", "]"}], "]"}]}]}], "]"}], 
+            "\[IndentingNewLine]", "&"}], ",", "Solar"}], "]"}], ",", 
+         RowBox[{"ImageSize", "\[Rule]", "300"}], ",", 
+         RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"(*", " ", 
+        RowBox[{"Display", " ", "the", " ", "objects"}], " ", "*)"}], 
+       "\[IndentingNewLine]", 
+       RowBox[{"models", "[", 
+        RowBox[{"[", "index", "]"}], "]"}]}], "\[IndentingNewLine]", "}"}], 
+     ",", 
+     RowBox[{"Alignment", "\[Rule]", "Center"}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"index", ",", "1"}], "}"}], ",", 
+     RowBox[{"ControlType", "\[Rule]", "None"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"Initialization", "\[RuleDelayed]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Solar", "=", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"Graphics3D", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Blue", ",", 
+             RowBox[{"Sphere", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"0.5", ",", "0.", ",", "0."}], "}"}], ",", "0.2"}], 
+              "]"}]}], "}"}], ",", 
+           RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Graphics3D", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Red", ",", 
+             RowBox[{"Sphere", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"1.", ",", "0.", ",", "0."}], "}"}], ",", "0.2"}], 
+              "]"}]}], "}"}], ",", 
+           RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Graphics3D", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Green", ",", 
+             RowBox[{"Sphere", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"1.5", ",", "0.", ",", "0."}], "}"}], ",", "0.2"}], 
+              "]"}]}], "}"}], ",", 
+           RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"Graphics3D", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Orange", ",", 
+             RowBox[{"Sphere", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"2.", ",", "0.", ",", "0."}], "}"}], ",", "0.2"}], 
+              "]"}]}], "}"}], ",", 
+           RowBox[{"Boxed", "\[Rule]", "False"}]}], "]"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"models", "=", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"SphericalPlot3D", "[", 
+          RowBox[{
+           RowBox[{"1.2", " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{"2", " ", 
+               RowBox[{"Cos", "[", 
+                RowBox[{"2", " ", "\[Theta]"}], "]"}]}]}], ")"}]}], ",", 
+           RowBox[{"{", 
+            RowBox[{"\[Theta]", ",", "0", ",", "\[Pi]"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"\[Phi]", ",", "0", ",", 
+             RowBox[{"2", " ", "\[Pi]"}]}], "}"}], ",", 
+           RowBox[{"PlotStyle", "\[Rule]", "Blue"}], ",", 
+           RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+           RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+           RowBox[{"Axes", "\[Rule]", "False"}]}], "]"}], ",", 
+         RowBox[{"SphericalPlot3D", "[", 
+          RowBox[{
+           RowBox[{"8.", " ", 
+            RowBox[{"Abs", "@", 
+             RowBox[{"SphericalHarmonicY", "[", 
+              RowBox[{"3", ",", "1", ",", "\[Theta]", ",", "\[Phi]"}], 
+              "]"}]}]}], ",", 
+           RowBox[{"{", 
+            RowBox[{"\[Theta]", ",", "0", ",", "\[Pi]"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"\[Phi]", ",", "0", ",", 
+             RowBox[{"2", " ", "\[Pi]"}]}], "}"}], ",", 
+           RowBox[{"PlotStyle", "\[Rule]", "Red"}], ",", 
+           RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+           RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+           RowBox[{"Axes", "\[Rule]", "False"}]}], "]"}], ",", 
+         RowBox[{"ParametricPlot3D", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Cos", "[", "u", "]"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"3", "+", 
+                RowBox[{
+                 RowBox[{"Cos", "[", 
+                  RowBox[{"u", "/", "2"}], "]"}], " ", 
+                 RowBox[{"Sin", "[", "v", "]"}]}], "-", 
+                RowBox[{
+                 RowBox[{"Sin", "[", 
+                  RowBox[{"u", "/", "2"}], "]"}], " ", 
+                 RowBox[{"Sin", "[", 
+                  RowBox[{"2", " ", "v"}], "]"}]}]}], ")"}]}], ",", 
+             RowBox[{
+              RowBox[{"Sin", "[", "u", "]"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"3", "+", 
+                RowBox[{
+                 RowBox[{"Cos", "[", 
+                  RowBox[{"u", "/", "2"}], "]"}], " ", 
+                 RowBox[{"Sin", "[", "v", "]"}]}], "-", 
+                RowBox[{
+                 RowBox[{"Sin", "[", 
+                  RowBox[{"u", "/", "2"}], "]"}], " ", 
+                 RowBox[{"Sin", "[", 
+                  RowBox[{"2", " ", "v"}], "]"}]}]}], ")"}]}], ",", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Sin", "[", 
+                RowBox[{"u", "/", "2"}], "]"}], " ", 
+               RowBox[{"Sin", "[", "v", "]"}]}], "+", 
+              RowBox[{
+               RowBox[{"Cos", "[", 
+                RowBox[{"u", "/", "2"}], "]"}], " ", 
+               RowBox[{"Sin", "[", 
+                RowBox[{"2", " ", "v"}], "]"}]}]}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"u", ",", "0", ",", 
+             RowBox[{"2", " ", "Pi"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"v", ",", "0", ",", 
+             RowBox[{"2", " ", "Pi"}]}], "}"}], ",", 
+           RowBox[{"PlotStyle", "\[Rule]", "Green"}], ",", 
+           RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+           RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+           RowBox[{"Axes", "\[Rule]", "False"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"RevolutionPlot3D", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"2", "+", 
+              RowBox[{"Cos", "[", "t", "]"}]}], ",", 
+             RowBox[{"Sin", "[", "t", "]"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"t", ",", "0", ",", 
+             RowBox[{"2", " ", "Pi"}]}], "}"}], ",", 
+           RowBox[{"PlotStyle", "\[Rule]", "Orange"}], ",", 
+           RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+           RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+           RowBox[{"Axes", "\[Rule]", "False"}]}], "]"}]}], "}"}]}]}], 
+     ")"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6453660210351677`*^9, 3.6453660279968634`*^9}, {
+   3.6453660781147127`*^9, 3.645366235089713*^9}, {3.6453663088647127`*^9, 
+   3.6453663220107126`*^9}, {3.6453671742306767`*^9, 3.645367230716325*^9}, {
+   3.6453672617844315`*^9, 3.6453673123794904`*^9}, {3.64536734507876*^9, 
+   3.6453673493361855`*^9}, {3.645367433758627*^9, 3.6453674376610174`*^9}, {
+   3.645367522882539*^9, 3.6453675727845287`*^9}, 3.6453716257078085`*^9, {
+   3.645371920683303*^9, 3.645371936785913*^9}, {3.645372016953929*^9, 
+   3.6453720976780005`*^9}, {3.6453770115048733`*^9, 
+   3.6453770374848733`*^9}, {3.645377140102873*^9, 3.645377159253873*^9}, {
+   3.6453772294761667`*^9, 3.6453773350657244`*^9}, {3.6453773839326105`*^9, 
+   3.645377422559473*^9}, {3.645377472493466*^9, 3.6453775495871744`*^9}, {
+   3.645377587123928*^9, 3.6453776305492697`*^9}, {3.645377661299345*^9, 
+   3.6453777254017544`*^9}, {3.645377762715485*^9, 3.645377775915805*^9}, {
+   3.6453824348934584`*^9, 3.6453824715624585`*^9}, {3.645877145564737*^9, 
+   3.645877189991737*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`index$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`index$$], 1}}}, Typeset`size$$ = {
+    300., {191.5, 198.5}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`index$$ = 1}, 
+      "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Column[{
+         Graphics3D[
+          Map[Button[
+            Part[#, 1], $CellContext`index$$ = Part[
+              Part[
+               Position[$CellContext`Solar, 
+                Part[#, 1]], 1], 1]]& , $CellContext`Solar], ImageSize -> 300,
+           Boxed -> False], 
+         Part[$CellContext`models, $CellContext`index$$]}, Alignment -> 
+        Center], 
+      "Specifications" :> {{{$CellContext`index$$, 1}, ControlType -> None}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{351., {224., 231.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>(($CellContext`Solar = {
+         Graphics3D[{Blue, 
+           Sphere[{0.5, 0., 0.}, 0.2]}, Boxed -> False], 
+         Graphics3D[{Red, 
+           Sphere[{1., 0., 0.}, 0.2]}, Boxed -> False], 
+         Graphics3D[{Green, 
+           Sphere[{1.5, 0., 0.}, 0.2]}, Boxed -> False], 
+         Graphics3D[{Orange, 
+           Sphere[{2., 0., 0.}, 0.2]}, Boxed -> False]}; $CellContext`models = {
+         SphericalPlot3D[
+         1.2 (1 + 2 Cos[2 $CellContext`\[Theta]]), {$CellContext`\[Theta], 0, 
+           Pi}, {$CellContext`\[Phi], 0, 2 Pi}, PlotStyle -> Blue, Mesh -> 
+          None, Boxed -> False, Axes -> False], 
+         SphericalPlot3D[8. Abs[
+            SphericalHarmonicY[
+            3, 1, $CellContext`\[Theta], $CellContext`\[Phi]]], \
+{$CellContext`\[Theta], 0, Pi}, {$CellContext`\[Phi], 0, 2 Pi}, PlotStyle -> 
+          Red, Mesh -> None, Boxed -> False, Axes -> False], 
+         ParametricPlot3D[{
+          Cos[$CellContext`u] (3 + Cos[$CellContext`u/2] Sin[$CellContext`v] - 
+            Sin[$CellContext`u/2] Sin[2 $CellContext`v]), 
+           Sin[$CellContext`u] (3 + Cos[$CellContext`u/2] Sin[$CellContext`v] - 
+            Sin[$CellContext`u/2] Sin[2 $CellContext`v]), 
+           Sin[$CellContext`u/2] Sin[$CellContext`v] + 
+           Cos[$CellContext`u/2] Sin[2 $CellContext`v]}, {$CellContext`u, 0, 
+           2 Pi}, {$CellContext`v, 0, 2 Pi}, PlotStyle -> Green, Mesh -> None,
+           Boxed -> False, Axes -> False], 
+         RevolutionPlot3D[{2 + Cos[$CellContext`t], 
+           Sin[$CellContext`t]}, {$CellContext`t, 0, 2 Pi}, PlotStyle -> 
+          Orange, Mesh -> None, Boxed -> False, Axes -> False]}); 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.645377425738791*^9, {3.6453775063828545`*^9, 3.645377552032419*^9}, 
+   3.6453776344116564`*^9, {3.6453776646126757`*^9, 3.645377728102024*^9}, 
+   3.645377778757089*^9, 3.645377943861598*^9, 3.6453824459144583`*^9, 
+   3.6458771923227367`*^9, 3.645877249060337*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.645371572406479*^9, 3.6453716178720245`*^9}, {
+   3.6453719706573*^9, 3.645371973286563*^9}, 3.6453777112283373`*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6453716396312003`*^9, 3.645371639673205*^9}, {
+   3.645371975968831*^9, 3.64537199086532*^9}, 3.6453777129235067`*^9}]
+},
+WindowSize->{1680, 1008},
+WindowMargins->{{1672, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 192, 5, 52, "Input"],
+Cell[CellGroupData[{
+Cell[775, 29, 9913, 229, 592, "Input"],
+Cell[10691, 260, 3800, 75, 472, "Output"]
+}, Open  ]],
+Cell[14506, 338, 166, 2, 31, "Input"],
+Cell[14675, 342, 167, 2, 31, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
